@@ -1,20 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Material Theme Builder</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        --plugin-height: 100vh;
+        --plugin-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      theme-generator {
+        outline: none;
+        height: var(--plugin-height);
+        width: var(--plugin-width);
+      }
+    </style>
   </head>
-  <body>
-    <theme-generator>
-      <img src="/img/brown_image.png" />
-      <img src="/img/green_image.png" />
-      <img src="/img/red_image.png" />
-      <img src="/img/white_image.png" />
-      <img src="/img/yellow_image.png" />
-    </theme-generator>
 
-    <script src="app.js" type="module"></script>
+  <body>
+    <theme-generator id="root" name="material-theme"></theme-generator>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D9MC9PMX4M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        dataLayer.push(arguments);
+        console.log("track", arguments);
+      };
+      const startTime = new Date();
+      window.gtag("js", startTime);
+      window.gtag("config", "G-D9MC9PMX4M", {
+        cookie_flags: "SameSite=None;Secure",
+      });
+      // debug_mode: true,
+      window.dataLayer.push({
+        event: "open_plugin",
+        date: startTime.getTime(),
+      });
+      window.addEventListener("beforeunload", function () {
+        const endTime = new Date();
+        window.dataLayer.push({
+          event: "close_plugin",
+          date: endTime.getTime(),
+          timeonpage: `${endTime.getTime() - startTime.getTime()}`,
+        });
+      });
+    </script>
+
+    <script src="jszip.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
