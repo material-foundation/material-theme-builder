@@ -1,7 +1,17 @@
 /*
+Copyright 2021 Google LLC
 
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 */
 'use strict';var $jscomp$defineProperty="function"==typeof Object.defineProperties?Object.defineProperty:function(target,property,descriptor){if(target==Array.prototype||target==Object.prototype)return target;target[property]=descriptor.value;return target},$jscomp$getGlobal=function(passedInThis){for(var possibleGlobals=["object"==typeof globalThis&&globalThis,passedInThis,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global],i=0;i<possibleGlobals.length;++i){var maybeGlobal=
 possibleGlobals[i];if(maybeGlobal&&maybeGlobal.Math==Math)return maybeGlobal}throw Error("Cannot find global object");},$jscomp$global=$jscomp$getGlobal(this),$jscomp$polyfill=function(target,polyfill){if(polyfill)a:{for(var obj=$jscomp$global,split=target.split("."),i=0;i<split.length-1;i++){var key=split[i];if(!(key in obj))break a;obj=obj[key]}var property=split[split.length-1],orig=obj[property],impl=polyfill(orig);impl!=orig&&null!=impl&&$jscomp$defineProperty(obj,property,{configurable:!0,writable:!0,
