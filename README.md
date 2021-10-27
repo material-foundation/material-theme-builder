@@ -2,6 +2,8 @@
 
 Visualize dynamic color, build a custom theme, and export to code.
 
+https://material-foundation.github.io/material-theme-builder/
+
 ## Migrate to Material Design 3
 
 With built-in code export, Material Theme Builder makes it easy migrate to the M3 color system and take advantage of dynamic color.
