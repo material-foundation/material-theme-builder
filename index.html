@@ -38,7 +38,7 @@
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () {
         dataLayer.push(arguments);
-        console.log("track", arguments);
+        console.debug("track", arguments);
       };
       const startTime = new Date();
       window.gtag("js", startTime);
