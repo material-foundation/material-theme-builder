@@ -59,20 +59,16 @@
         });
       });
       window.parent.onmessage = (e) => {
-        if (e.data.type === "apply-theme") {
-          const theme = e.data.theme;
+        const { type, theme } = e.data;
+        if (type === "apply-theme") {
           const hash = window.location.hash.slice(1) || "";
-          window.dataLayer.push({
-            event: "apply_theme",
-            date: new Date().getTime(),
-            theme_type: hash.startsWith('/custom') ? 'custom' : 'dynamic',
-            theme,
-          });
+          const themeType = hash.startsWith("/custom") ? "custom" : "dynamic";
+          window.gtag("apply_theme", themeType, theme);
         }
       };
     </script>
 
     <script src="third_party/jszip.min.js"></script>
-    <script src="app.js?version=1.0.4"></script>
+    <script src="app.js?version=1.0.3"></script>
   </body>
 </html>
