@@ -2501,7 +2501,8 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$split$
             color1=${color.color}
             color2=${module$contents$google3$ux$material$theme_generator$src$theme$color_family_blendColor(JSCompiler_StaticMethods_harmonizedColors$self.theme.seed,color.color)}
           ></split-color>`)}
-    </div>`};module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){const theme=this.state.theme,colors=((null===theme||void 0===theme?void 0:theme.customColors)||[]).filter(e=>e.harmonized);return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<section>
+    </div>`};
+module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){const theme$jscomp$0=this.state.theme,colors=((null===theme$jscomp$0||void 0===theme$jscomp$0?void 0:theme$jscomp$0.customColors)||[]).filter(e=>e.harmonized);return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<section>
       <div class="options">
         <article>
           <span class="visualize">Visualize dynamic color</span
@@ -2510,7 +2511,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$split$
             action.</span
           >
           <wallpaper-selector
-            .theme=${theme}
+            .theme=${theme$jscomp$0}
             @select-image=${e=>{this.selectImage(e.detail)}}
           ></wallpaper-selector>
           <shuffle-button
@@ -2526,6 +2527,8 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$split$
         <app-preview></app-preview
         ><add-wallpaper
           @select-image=${e=>{this.selectImage(e.detail)}}
+          @contextmenu=${async e=>{e.preventDefault();let value=prompt("Enter a url");if(value&&(value.startsWith("https://")||value.startsWith("http://"))){const seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(value),customColors=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme.customColors||[],theme=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed).save();theme.imageUrl=
+value;theme.customColors=customColors;JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,theme)}return!1}}
         ></add-wallpaper>
       </div>
     </section>`}selectImage(url){url?(this.theme.imageUrl=url,this.wallpaper.style.backgroundImage=`url(${url})`):(this.theme.imageUrl="",this.wallpaper.style.backgroundImage="");JSCompiler_StaticMethods_requestUpdate(this)}firstUpdated(){this.state.addListener(state=>{this.theme=state;this.theme.imageUrl&&this.selectImage(this.theme.imageUrl)});this.theme=this.state.theme;this.theme.imageUrl&&this.selectImage(this.theme.imageUrl)}};
