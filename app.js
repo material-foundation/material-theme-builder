@@ -89,8 +89,8 @@ JSCompiler_inline_result$jscomp$4);var justification=new goog$string$Const(goog$
 const policy=goog$html$trustedtypes$getPolicyPrivateDoNotAccessOrElse();var value=policy?policy.createScriptURL(url$jscomp$0):url$jscomp$0;url=new goog$html$TrustedResourceUrl(value,goog$html$TrustedResourceUrl$CONSTRUCTOR_TOKEN_PRIVATE_);goog$dom$asserts$assertIsElementType_(JSCompiler_inline_result);JSCompiler_inline_result.srcdoc=module$contents$goog$html$SafeHtml_SafeHtml$unwrapTrustedHTML(html);goog$dom$asserts$assertIsElementType_(JSCompiler_inline_result);JSCompiler_inline_result.src=goog$html$TrustedResourceUrl$unwrapTrustedScriptURL(url).toString();
 JSCompiler_inline_result.style.cssText="height: 0; left: 0; position: absolute; top: 0; width: 0;";JSCompiler_inline_result.setAttribute("aria-hidden","true");return JSCompiler_inline_result}function module$contents$security$IframeSandbox_awaitDomReady_(){return new Promise(resolve=>{"loading"!=document.readyState?resolve():goog$events$listenOnce(document,"DOMContentLoaded",()=>{resolve()})})};var module$exports$security$SafeDownloader=class SafeDownloader{static async download(data,filename,contentType=""){let downloader=new SafeDownloader;try{await downloader.init(),await downloader.download(data,filename,contentType)}finally{await downloader.dispose()}}constructor(){this.sandbox=new module$exports$security$IframeSandbox}init(){return this.sandbox.load()}download(data,filename,contentType=""){const blob=data instanceof Blob?data:new Blob([data],{type:contentType});return navigator.msSaveOrOpenBlob?
 (navigator.msSaveOrOpenBlob(blob,filename),module$contents$security$SafeDownloader_timeout()):this.sandbox.exec('var url=URL.createObjectURL(blob);var a=document.createElement("a");if(!("download" in a)){throw new Error("Downloading not supported on this browser");}a.href=url;a.download=filename;document.body.appendChild(a);a.click();setTimeout(function(){document.body.removeChild(a);URL.revokeObjectURL(url);},250);',[{name:"blob",value:blob,transfer:!1},{name:"filename",value:filename,transfer:!1}]).then(()=>
-module$contents$security$SafeDownloader_timeout())}dispose(){this.sandbox.dispose()}};function module$contents$security$SafeDownloader_timeout(){return new Promise(resolve=>{setTimeout(resolve,500)})}var parts$jscomp$inline_887=["SafeDownloader"],cur$jscomp$inline_888=goog$global;parts$jscomp$inline_887[0]in cur$jscomp$inline_888||"undefined"==typeof cur$jscomp$inline_888.execScript||cur$jscomp$inline_888.execScript("var "+parts$jscomp$inline_887[0]);
-for(var part$jscomp$inline_889;parts$jscomp$inline_887.length&&(part$jscomp$inline_889=parts$jscomp$inline_887.shift());)parts$jscomp$inline_887.length||void 0===module$exports$security$SafeDownloader?cur$jscomp$inline_888=cur$jscomp$inline_888[part$jscomp$inline_889]&&cur$jscomp$inline_888[part$jscomp$inline_889]!==Object.prototype[part$jscomp$inline_889]?cur$jscomp$inline_888[part$jscomp$inline_889]:cur$jscomp$inline_888[part$jscomp$inline_889]={}:cur$jscomp$inline_888[part$jscomp$inline_889]=module$exports$security$SafeDownloader;function module$contents$google3$javascript$typescript$contrib$check_checkExhaustiveAllowing(value,msg=`unexpected value ${value}!`){throw Error(msg);};/*
+module$contents$security$SafeDownloader_timeout())}dispose(){this.sandbox.dispose()}};function module$contents$security$SafeDownloader_timeout(){return new Promise(resolve=>{setTimeout(resolve,500)})}var parts$jscomp$inline_900=["SafeDownloader"],cur$jscomp$inline_901=goog$global;parts$jscomp$inline_900[0]in cur$jscomp$inline_901||"undefined"==typeof cur$jscomp$inline_901.execScript||cur$jscomp$inline_901.execScript("var "+parts$jscomp$inline_900[0]);
+for(var part$jscomp$inline_902;parts$jscomp$inline_900.length&&(part$jscomp$inline_902=parts$jscomp$inline_900.shift());)parts$jscomp$inline_900.length||void 0===module$exports$security$SafeDownloader?cur$jscomp$inline_901=cur$jscomp$inline_901[part$jscomp$inline_902]&&cur$jscomp$inline_901[part$jscomp$inline_902]!==Object.prototype[part$jscomp$inline_902]?cur$jscomp$inline_901[part$jscomp$inline_902]:cur$jscomp$inline_901[part$jscomp$inline_902]={}:cur$jscomp$inline_901[part$jscomp$inline_902]=module$exports$security$SafeDownloader;function module$contents$google3$javascript$typescript$contrib$check_checkExhaustiveAllowing(value,msg=`unexpected value ${value}!`){throw Error(msg);};/*
 
  SPDX-License-Identifier: Apache-2.0
 */
@@ -1429,9 +1429,9 @@ category:"sys.color",value:`{md.sys.color.${tokenKey}.${"light"}}`,config}))}con
 !module$exports$google3$ux$material$theme_generator$flags$SHOW_ANDROID&&["98","35","25"].includes(luminance)||base.entities.push(JSCompiler_StaticMethods_createToken({type:"color",name:`md.ref.palette.${`${sectionKey}${luminance}`}`,category:"ref.palette",value,config}))}}base.categories=[{id:"sys.color.light",label:"Light"},{id:"sys.color.dark",label:"Dark"},{id:"sys.color",label:"Default"},{id:"ref.palette",label:"Palette"}]})},JSCompiler_StaticMethods_generateComponents=function(JSCompiler_StaticMethods_generateComponents$self,
 config){return JSCompiler_StaticMethods_createSection(JSCompiler_StaticMethods_generateComponents$self,config,"components",()=>{})},JSCompiler_StaticMethods_generateDocs=function(JSCompiler_StaticMethods_generateDocs$self,config){return JSCompiler_StaticMethods_createSection(JSCompiler_StaticMethods_generateDocs$self,config,"docs",()=>{})},JSCompiler_StaticMethods_generateFonts=function(JSCompiler_StaticMethods_generateFonts$self,config){return JSCompiler_StaticMethods_createSection(JSCompiler_StaticMethods_generateFonts$self,
 config,"fonts",base=>{for(const [key__tsickle_destructured_5,value__tsickle_destructured_6]of Object.entries(JSCompiler_StaticMethods_generateFonts$self.theme.styles)){const key=key__tsickle_destructured_5,value=value__tsickle_destructured_6;let name=key;switch(key){case "display2":name="display-large";break;case "display3":name="display-medium";break;case "headline1":name="display-small";break;case "headline2":name="headline-large";break;case "headline3":name="headline-medium";break;case "headline4":name=
-"headline-small";break;case "headline5":name="title-large";break;case "subhead1":name="title-medium";break;case "subhead2":name="title-small";break;case "body1":name="body-large";break;case "body2":name="body-medium";break;case "caption":name="body-small";break;case "button":name="label-large";break;case "overline":name="label-medium";break;case "labelSmall":name="label-small"}var JSCompiler_temp_const=base.entities,JSCompiler_temp_const$jscomp$0=JSCompiler_temp_const.push,JSCompiler_object_inline_name_831=
-name,JSCompiler_object_inline_value_832=value,JSCompiler_object_inline_config_833=config;const token=`md.sys.typescale.${JSCompiler_object_inline_name_831}`;var JSCompiler_inline_result={class:"collection",type:"font",id:token,name:token,description:"",tags:[...JSCompiler_object_inline_name_831.split("."),"typography"],last_updated_by:JSCompiler_object_inline_config_833.name,last_updated:JSCompiler_object_inline_config_833.dateCreated,tokens:[{id:`${token}.font`,type:"custom",value:`${JSCompiler_object_inline_value_832.fontFamilyName}`,
-key:"family"},{id:`${token}.line-height`,type:"size",value:`${JSCompiler_object_inline_value_832.lineHeight}`,key:"line-height"},{id:`${token}.weight`,type:"custom",value:`${JSCompiler_object_inline_value_832.fontFamilyStyle}`,key:"weight"},{id:`${token}.tracking`,type:"custom",value:`${JSCompiler_object_inline_value_832.letterSpacing}`,key:"tracking"},{id:`${token}.size`,type:"custom",value:`${JSCompiler_object_inline_value_832.fontSize}`,key:"size"}]};JSCompiler_temp_const$jscomp$0.call(JSCompiler_temp_const,
+"headline-small";break;case "headline5":name="title-large";break;case "subhead1":name="title-medium";break;case "subhead2":name="title-small";break;case "body1":name="body-large";break;case "body2":name="body-medium";break;case "caption":name="body-small";break;case "button":name="label-large";break;case "overline":name="label-medium";break;case "labelSmall":name="label-small"}var JSCompiler_temp_const=base.entities,JSCompiler_temp_const$jscomp$0=JSCompiler_temp_const.push,JSCompiler_object_inline_name_844=
+name,JSCompiler_object_inline_value_845=value,JSCompiler_object_inline_config_846=config;const token=`md.sys.typescale.${JSCompiler_object_inline_name_844}`;var JSCompiler_inline_result={class:"collection",type:"font",id:token,name:token,description:"",tags:[...JSCompiler_object_inline_name_844.split("."),"typography"],last_updated_by:JSCompiler_object_inline_config_846.name,last_updated:JSCompiler_object_inline_config_846.dateCreated,tokens:[{id:`${token}.font`,type:"custom",value:`${JSCompiler_object_inline_value_845.fontFamilyName}`,
+key:"family"},{id:`${token}.line-height`,type:"size",value:`${JSCompiler_object_inline_value_845.lineHeight}`,key:"line-height"},{id:`${token}.weight`,type:"custom",value:`${JSCompiler_object_inline_value_845.fontFamilyStyle}`,key:"weight"},{id:`${token}.tracking`,type:"custom",value:`${JSCompiler_object_inline_value_845.letterSpacing}`,key:"tracking"},{id:`${token}.size`,type:"custom",value:`${JSCompiler_object_inline_value_845.fontSize}`,key:"size"}]};JSCompiler_temp_const$jscomp$0.call(JSCompiler_temp_const,
 JSCompiler_inline_result)}})},JSCompiler_StaticMethods_createSection=function(JSCompiler_StaticMethods_createSection$self,config,section,update){const base={dsp_spec_version:config.version,last_updated_by:config.name,last_updated:config.dateCreated,entities:[],categories:[]};update(base);return{path:`${JSCompiler_StaticMethods_createSection$self.name}/data/${section}.json`,content:JSON.stringify(base,null,2),mimeType:"application/json"}},JSCompiler_StaticMethods_createToken=function(options){return{class:"token",
 type:options.type,id:options.name,name:options.name,value:options.value,description:"",category_id:options.category,last_updated_by:options.config.name,last_updated:options.config.dateCreated,tags:[...options.name.split("."),options.type]}},module$exports$google3$ux$material$theme_generator$src$exporters$dsp$DspExporter=class extends module$exports$google3$ux$material$theme_generator$src$exporters$base$ThemeExporter{generate(){var JSCompiler_inline_result={dateCreated:(new Date(Date.now())).toUTCString(),
 author:"Material Design",version:"0.0.1",name:"Material"};return[{path:`${this.name}/dsp.json`,content:JSON.stringify({dsp_spec_version:JSCompiler_inline_result.version,last_updated_by:JSCompiler_inline_result.name,last_updated:JSCompiler_inline_result.dateCreated,settings:{name:JSCompiler_inline_result.name,package_version:JSCompiler_inline_result.version,build_tool:"StyleDictionary",snippet_trigger_prefix:"md_",build_status_label:"dev",build_params:"./config.js",languages:[{label:"Coffeescript",
@@ -1680,12 +1680,13 @@ module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$con
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",String)],module$exports$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone$DropZone.prototype,"accept",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean,reflect:!0}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone$DropZone.prototype,"multiple",void 0);
 module$exports$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone$DropZone=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("drop-zone")],module$exports$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone$DropZone);
-function module$contents$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone_uploadFile(cb,options){const elem=document.createElement("input");elem.type="file";const {accept,multiple}=options||{};multiple?(elem.multiple=multiple,elem.setAttribute("webkitdirectory",""),elem.setAttribute("mozdirectory","")):accept&&(elem.accept=accept);elem.addEventListener("change",e=>{cb(e.target.files)});elem.click()};const module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images=[module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("1","Wallpaper 1 red sand dunes"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("2","Wallpaper 2 green mountain top"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("3","Wallpaper 3 orange desert"),
+function module$contents$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone_uploadFile(cb,options){const elem=document.createElement("input");elem.type="file";const {accept,multiple}=options||{};multiple?(elem.multiple=multiple,elem.setAttribute("webkitdirectory",""),elem.setAttribute("mozdirectory","")):accept&&(elem.accept=accept);elem.addEventListener("change",e=>{cb(e.target.files)});elem.click()};var JSCompiler_StaticMethods_setTheme=function(JSCompiler_StaticMethods_setTheme$self,theme){JSCompiler_StaticMethods_setTheme$self.theme=theme;JSCompiler_StaticMethods_setTheme$self.listeners.forEach(listener=>listener(theme))},module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState=new class{constructor(theme){this.theme=theme;this.listeners=[]}addListener(listener){this.listeners.push(listener)}removeListener(listener){this.listeners=this.listeners.filter(l=>l!==listener)}}(module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p).save());const module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images=[module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("1","Wallpaper 1 red sand dunes"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("2","Wallpaper 2 green mountain top"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("3","Wallpaper 3 orange desert"),
 module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("4","Wallpaper 4 blue mountains"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("5","Wallpaper 5 green rocky mountains")];
-var module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.images=[...module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images]}render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div class="images row">
+var module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.images=[...module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images];this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){const theme=this.state.theme;
+return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div class="images row">
       ${this.images.map(img=>module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<img
           draggable="false"
-          ?selected=${img.wallpaper===this.theme.imageUrl}
+          ?selected=${img.wallpaper===theme.imageUrl}
           class="image"
           aria-label="${img.description}"
           role="button"
@@ -1693,7 +1694,7 @@ var module$exports$google3$ux$material$theme_generator$web_app$src$components$wa
           tabindex="0"
           @click=${()=>this.selectImage(img.wallpaper)}
         />`)}
-    </div>`}async selectImage(wallpaper){this.dispatchEvent(new CustomEvent("select-image",{detail:wallpaper,bubbles:!0,composed:!0}))}};module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
+    </div>`}firstUpdated(){this.state.addListener(state=>{this.theme=state;JSCompiler_StaticMethods_requestUpdate(this)});this.theme=this.state.theme}async selectImage(wallpaper){this.dispatchEvent(new CustomEvent("select-image",{detail:wallpaper,bubbles:!0,composed:!0}))}};module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
     .images {
       user-select: none;
     }
@@ -2030,14 +2031,14 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$core$2
   `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$extended$2dcolor$2dinput$ExtendedColorInput.prototype,"value",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$extended$2dcolor$2dinput$ExtendedColorInput.prototype,"label",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$extended$2dcolor$2dinput$ExtendedColorInput.prototype,"harmonized",void 0);
-module$exports$google3$ux$material$theme_generator$web_app$src$components$extended$2dcolor$2dinput$ExtendedColorInput=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("extended-color-input")],module$exports$google3$ux$material$theme_generator$web_app$src$components$extended$2dcolor$2dinput$ExtendedColorInput);var module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.showMoreColorInfo=!1}render(){var _a,_b;return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div class="preview">
+module$exports$google3$ux$material$theme_generator$web_app$src$components$extended$2dcolor$2dinput$ExtendedColorInput=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("extended-color-input")],module$exports$google3$ux$material$theme_generator$web_app$src$components$extended$2dcolor$2dinput$ExtendedColorInput);var module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.showMoreColorInfo=!1;this.isEmbed=location.hash.includes("embed");this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){const theme=this.state.theme;return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div class="preview" ?embed=${this.isEmbed}>
       <div class="preview-content">
         <span class="headline2">Your Theme</span>
         <span class="subtitle1">Light Theme</span>
-        ${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildScheme(null===(_a=this.theme)||void 0===_a?void 0:_a.light)}
+        ${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildScheme(null===theme||void 0===theme?void 0:theme.light)}
         <span class="subtitle1">Dark Theme</span>
-        ${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildScheme(null===(_b=this.theme)||void 0===_b?void 0:_b.dark)}
-        ${this.showMoreColorInfo?module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildTonalPallets(this.theme)}
+        ${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildScheme(null===theme||void 0===theme?void 0:theme.dark)}
+        ${this.showMoreColorInfo?module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildTonalPallets(theme)}
               <span
                 class="color-info-expand"
                 role="button"
@@ -2050,9 +2051,9 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$extend
               >More color information</span
             >`}
         <div style="height: 20px"></div>
-        ${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildExtendedColors(this.theme)}
+        ${module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildExtendedColors(theme)}
       </div>
-    </div>`}firstUpdated(){window.parent.addEventListener("theme-change",e=>{this.theme=e.detail});this.dispatchEvent(new CustomEvent("theme-action",{detail:theme=>this.theme=theme,bubbles:!0,composed:!0}))}};module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
+    </div>`}firstUpdated(){this.state.addListener(state=>{this.theme=state;JSCompiler_StaticMethods_requestUpdate(this)});this.theme=this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
     .preview {
       flex: 8;
       height: var(--content-height);
@@ -2079,6 +2080,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$extend
       padding-bottom: calc(var(--padding) * 2);
       padding-top: 44px;
     }
+    
     .preview-content > .subtitle1 {
       display: block;
 
@@ -2258,10 +2260,10 @@ function module$contents$google3$ux$material$theme_generator$web_app$src$compone
     <div class="tonal-row">
       ${group?items.map(color=>{const [key__tsickle_destructured_1,value__tsickle_destructured_2]=color;return module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_tonalBox(`${key__tsickle_destructured_1}`,value__tsickle_destructured_2)}):{}}
     </div>
-  </div>`};var module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom={},JSCompiler_StaticMethods_updateThemeColors=function(JSCompiler_StaticMethods_updateThemeColors$self,customColors){JSCompiler_StaticMethods_updateThemeColors$self.theme.customColors=customColors.filter(c=>""!==c.name);JSCompiler_StaticMethods_updateTheme(JSCompiler_StaticMethods_updateThemeColors$self,JSCompiler_StaticMethods_updateThemeColors$self.theme)},JSCompiler_StaticMethods_updateTheme=function(JSCompiler_StaticMethods_updateTheme$self,
-theme){JSCompiler_StaticMethods_updateTheme$self.theme=theme;JSCompiler_StaticMethods_updateTheme$self.dispatchEvent(new CustomEvent("theme-change",{detail:theme,bubbles:!0,composed:!0}));JSCompiler_StaticMethods_requestUpdate(JSCompiler_StaticMethods_updateTheme$self)};
-module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{render(){var _a,_b;const source=Object(null!==(_b=null===(_a=this.theme)||void 0===_a?void 0:_a.source)&&void 0!==_b?_b:{}),customColors=this.theme.customColors||[];return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<main>
-      <section class="options">
+  </div>`};var module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom={},JSCompiler_StaticMethods_updateThemeColors=function(JSCompiler_StaticMethods_updateThemeColors$self,customColors){const theme=JSCompiler_StaticMethods_updateThemeColors$self.state.theme;theme.customColors=customColors.filter(c=>""!==c.name);JSCompiler_StaticMethods_setTheme(JSCompiler_StaticMethods_updateThemeColors$self.state,theme)};
+module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.isEmbed=location.hash.includes("embed");this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){var _a;const theme=this.state.theme,source=Object(null!==(_a=null===theme||void 0===theme?void 0:theme.source)&&void 0!==
+_a?_a:{}),customColors=theme.customColors||[];return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<main>
+      <section class="options" ?embed=${this.isEmbed}>
         <article>
          <div class="colors">
             <div class="core-colors">
@@ -2317,14 +2319,14 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.Cust
         <app-preview></app-preview>
       </section>
        <section class="theme-preview preview">
-        <theme-preview .theme=${this.theme}></theme-preview>
+        <theme-preview></theme-preview>
       </section>
-    </main>`}onColorChange(key$jscomp$0,color,options){var _a,_b;const source=Object(null!==(_b=null===(_a=this.theme)||void 0===_a?void 0:_a.source)&&void 0!==_b?_b:{}),customColors=this.theme.customColors||[];let adapter;(null===options||void 0===options?0:options.seed)?(source.seed=color,adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(color)):adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);
-source[key$jscomp$0]=color;adapter.props.overrides.customColors=customColors;for(const [key__tsickle_destructured_1,value__tsickle_destructured_2]of Object.entries(source)){const key=key__tsickle_destructured_1,value=value__tsickle_destructured_2;key&&value&&"seed"!==key&&JSCompiler_StaticMethods_setCustomColor(adapter,key,value)}JSCompiler_StaticMethods_updateTheme(this,adapter.save())}firstUpdated(){window.parent.addEventListener("theme-change",e=>{this.theme=e.detail});this.dispatchEvent(new CustomEvent("theme-action",
-{detail:theme=>this.theme=theme,bubbles:!0,composed:!0}))}};module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
+    </main>`}onColorChange(key$jscomp$0,color,options){var _a;const theme=this.state.theme,source=Object(null!==(_a=null===theme||void 0===theme?void 0:theme.source)&&void 0!==_a?_a:{}),customColors=theme.customColors||[];let adapter;(null===options||void 0===options?0:options.seed)?(source.seed=color,adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(color)):adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);
+source[key$jscomp$0]=color;adapter.props.overrides.customColors=customColors;for(const [key__tsickle_destructured_1,value__tsickle_destructured_2]of Object.entries(source)){const key=key__tsickle_destructured_1,value=value__tsickle_destructured_2;key&&value&&"seed"!==key&&JSCompiler_StaticMethods_setCustomColor(adapter,key,value)}var theme$jscomp$0=adapter.save();JSCompiler_StaticMethods_setTheme(this.state,theme$jscomp$0)}firstUpdated(){this.state.addListener(state=>{this.theme=state;JSCompiler_StaticMethods_requestUpdate(this)});
+this.theme=this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
     main {
-      overflow-y: auto;
-      height: 100%;
+      /* overflow-y: auto; */
+      /* height: 100%; */
     }
     article {
       padding: var(--padding);
@@ -2388,7 +2390,6 @@ source[key$jscomp$0]=color;adapter.props.overrides.customColors=customColors;for
         overflow-y: unset;
       }
       section {
-        height: 100%;
         width: unset;
       }
       .app-preview {
@@ -2419,8 +2420,11 @@ source[key$jscomp$0]=color;adapter.props.overrides.customColors=customColors;for
         border-right: 1px solid var(--md-sys-color-outline);
       }
     }
-  `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.prototype,"theme",void 0);
-module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$query_query("theme-preview"),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.prototype,"preview",void 0);
+    .core-colors[embed=""] {
+      margin-top: 1rem;
+    }
+  `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$query_query("theme-preview"),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.prototype,"preview",void 0);
+module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.prototype,"theme",void 0);
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("custom-base")],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase);var module$exports$google3$ux$material$theme_generator$web_app$src$components$add$2dwallpaper$AddWallpaper=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div
       role="button"
       aria-label="Add your wallpaper"
@@ -2496,7 +2500,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$split$
             color1=${color.color}
             color2=${module$contents$google3$ux$material$theme_generator$src$theme$color_family_blendColor(JSCompiler_StaticMethods_harmonizedColors$self.theme.seed,color.color)}
           ></split-color>`)}
-    </div>`};module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{render(){var _a;const colors=((null===(_a=this.theme)||void 0===_a?void 0:_a.customColors)||[]).filter(e=>e.harmonized);return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<section>
+    </div>`};module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){const theme=this.state.theme,colors=((null===theme||void 0===theme?void 0:theme.customColors)||[]).filter(e=>e.harmonized);return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<section>
       <div class="options">
         <article>
           <span class="visualize">Visualize dynamic color</span
@@ -2505,7 +2509,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$split$
             action.</span
           >
           <wallpaper-selector
-            .theme=${this.theme}
+            .theme=${theme}
             @select-image=${e=>{this.selectImage(e.detail)}}
           ></wallpaper-selector>
           <shuffle-button
@@ -2523,8 +2527,8 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$split$
           @select-image=${e=>{this.selectImage(e.detail)}}
         ></add-wallpaper>
       </div>
-    </section>`}selectImage(url){url?(this.theme.imageUrl=url,this.wallpaper.style.backgroundImage=`url(${url})`):(this.theme.imageUrl="",this.wallpaper.style.backgroundImage="");JSCompiler_StaticMethods_requestUpdate(this)}firstUpdated(){window.parent.addEventListener("theme-change",e=>{var theme=e.detail;this.theme=theme;theme.imageUrl&&this.selectImage(theme.imageUrl)});this.dispatchEvent(new CustomEvent("theme-action",{detail:theme=>{this.theme=theme;theme.imageUrl&&this.selectImage(theme.imageUrl)},
-bubbles:!0,composed:!0}))}};module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
+    </section>`}selectImage(url){url?(this.theme.imageUrl=url,this.wallpaper.style.backgroundImage=`url(${url})`):(this.theme.imageUrl="",this.wallpaper.style.backgroundImage="");JSCompiler_StaticMethods_requestUpdate(this)}firstUpdated(){this.state.addListener(state=>{this.theme=state;this.theme.imageUrl&&this.selectImage(this.theme.imageUrl)});this.theme=this.state.theme;this.theme.imageUrl&&this.selectImage(this.theme.imageUrl)}};
+module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
     section {
       max-width: 800px;
       height: 100%;
@@ -2767,56 +2771,57 @@ function module$contents$google3$ux$material$theme_generator$web_app$src$compone
     rel="noopener noreferrer"
     target="_blank"
     >${label}</a
-  >`};var module$exports$google3$ux$material$theme_generator$web_app$src$pages$root={};
-module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.darkMode=module$contents$google3$ux$material$theme_generator$web_app$src$pages$root_isDark();this.isDynamic=this.showInfoDialog=!1;this.showShare="true"===window.localStorage.getItem("mod-share");this.message=""}render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<main>
-      <header>
-        <div class="section header-left">
-          <div class="logo">${module$exports$google3$ux$material$theme_generator$assets$svgs$material$2dlogo$default}</div>
-          <span class="title">Material Theme Builder</span>
-        </div>
-        <nav class="center section spacer">
-          <tab-button
-            ?active=${this.isDynamic}
-            label="Dynamic"
-            icon="auto_awesome"
-            @click=${async()=>{this.isDynamic||(location.hash="#/dynamic")}}
-          >
-          </tab-button>
-          <div style="width: 15px;"></div>
-          <tab-button
-            ?active=${!this.isDynamic}
-            label="Custom"
-            icon="palette"
-            @click=${()=>{if(this.isDynamic){var customColors=this.theme.customColors||[],adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);adapter.props.overrides.customColors=customColors;this.dispatchEvent(new CustomEvent("theme-change",{detail:adapter.save(),bubbles:!0,composed:!0}));location.hash="#/custom"}}}
-          >
-          </tab-button>
-        </nav>
-        <div class="row section header-right">
-          ${this.isDynamic?module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html``:module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<export-button
-                .theme=${this.theme}
-                ?showIcon=${600>window.innerWidth}
-                dispatch
-              ></export-button>`}
-          <mwc-icon-button
-            aria-label="Switch to ${this.darkMode?"Light":"Dark"} theme"
-            icon="${this.darkMode?"light_mode":"brightness_medium"}"
-            @click=${()=>{this.darkMode=!this.darkMode;this.dispatchEvent(new CustomEvent("brightness-changes",{detail:this.darkMode,bubbles:!0,composed:!0}))}}
-          ></mwc-icon-button>
-          <mwc-icon-button
-            icon="info_outline"
-            aria-label="More Info"
-            @click=${()=>{this.showInfoDialog=!this.showInfoDialog}}
-          ></mwc-icon-button>
-          ${this.showShare?module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`
-                <mwc-icon-button
-                  icon="share"
-                  aria-label="Share"
-                  @click=${()=>{this.dispatchEvent(new CustomEvent("create-url",{detail:{callback:async url=>{if(window.navigator.share)try{await window.navigator.share({title:"Material Theme Builder",text:"Material Theme",url}),console.log("Share url presented!",url)}catch(e){console.error(e)}else await module$contents$google3$ux$material$theme_generator$src$utils_setClipboard(url),this.message="Share url copied to clipboard!",console.log(this.message,url)}},bubbles:!0,composed:!0}))}}
-                ></mwc-icon-button>
-              `:module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html``}
-        </div>
-      </header>
-      <section>
+  >`};var module$exports$google3$ux$material$theme_generator$web_app$src$pages$root={},JSCompiler_StaticMethods_dynamicTab=async function(JSCompiler_StaticMethods_dynamicTab$self){if(!JSCompiler_StaticMethods_dynamicTab$self.isDynamic){var url=module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images[Math.floor(Math.random()*module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images.length)].wallpaper,seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(url),
+customColors=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme.customColors||[],theme=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed).save();theme.imageUrl=url;theme.customColors=customColors;JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,theme);location.hash="#/dynamic"}};
+module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.darkMode=module$contents$google3$ux$material$theme_generator$web_app$src$pages$root_isDark();this.isDynamic=this.showInfoDialog=!1;this.showShare="true"===window.localStorage.getItem("mod-share");this.isEmbed=location.hash.includes("embed");this.message=""}render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<main>
+      ${this.isEmbed?"":module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html` <header>
+            <div class="section header-left">
+              <div class="logo">${module$exports$google3$ux$material$theme_generator$assets$svgs$material$2dlogo$default}</div>
+              <span class="title">Material Theme Builder</span>
+            </div>
+            <nav class="center section spacer">
+              <tab-button
+                ?active=${this.isDynamic}
+                label="Dynamic"
+                icon="auto_awesome"
+                @click=${()=>JSCompiler_StaticMethods_dynamicTab(this)}
+              >
+              </tab-button>
+              <div style="width: 15px;"></div>
+              <tab-button
+                ?active=${!this.isDynamic}
+                label="Custom"
+                icon="palette"
+                @click=${()=>{if(this.isDynamic){var customColors=this.theme.customColors||[],adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);adapter.props.overrides.customColors=customColors;JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,adapter.save());location.hash="#/custom"}}}
+              >
+              </tab-button>
+            </nav>
+            <div class="row section header-right">
+              ${this.isDynamic?module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html``:module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<export-button
+                    .theme=${this.theme}
+                    ?showIcon=${600>window.innerWidth}
+                    dispatch
+                  ></export-button>`}
+              <mwc-icon-button
+                aria-label="Switch to ${this.darkMode?"Light":"Dark"} theme"
+                icon="${this.darkMode?"light_mode":"brightness_medium"}"
+                @click=${()=>{this.darkMode=!this.darkMode;this.dispatchEvent(new CustomEvent("brightness-changes",{detail:this.darkMode,bubbles:!0,composed:!0}))}}
+              ></mwc-icon-button>
+              <mwc-icon-button
+                icon="info_outline"
+                aria-label="More Info"
+                @click=${()=>{this.showInfoDialog=!this.showInfoDialog}}
+              ></mwc-icon-button>
+              ${this.showShare?module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`
+                    <mwc-icon-button
+                      icon="share"
+                      aria-label="Share"
+                      @click=${()=>{this.dispatchEvent(new CustomEvent("create-url",{detail:{callback:async url=>{if(window.navigator.share)try{await window.navigator.share({title:"Material Theme Builder",text:"Material Theme",url}),console.log("Share url presented!",url)}catch(e){console.error(e)}else await module$contents$google3$ux$material$theme_generator$src$utils_setClipboard(url),this.message="Share url copied to clipboard!",console.log(this.message,url)}},bubbles:!0,composed:!0}))}}
+                    ></mwc-icon-button>
+                  `:module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html``}
+            </div>
+          </header>`}
+      <section ?embed=${this.isEmbed}>
         <slot></slot>
       </section>
       <mwc-snackbar
@@ -2826,7 +2831,8 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
       >
       </mwc-snackbar>
       <info-dialog .showInfoDialog=${this.showInfoDialog}></info-dialog>
-    </main>`}firstUpdated(){window.parent.addEventListener("theme-change",e=>{this.theme=e.detail});this.dispatchEvent(new CustomEvent("theme-action",{detail:theme=>this.theme=theme,bubbles:!0,composed:!0}));window.addEventListener("resize",()=>{this.debounce&&clearTimeout(this.debounce);this.debounce=window.setTimeout(()=>{this.debounce=void 0;JSCompiler_StaticMethods_requestUpdate(this)},100)})}};module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
+    </main>`}firstUpdated(){module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.addListener(state=>{this.theme=state});this.theme=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme;window.addEventListener("resize",()=>{this.debounce&&clearTimeout(this.debounce);this.debounce=window.setTimeout(()=>{this.debounce=void 0;JSCompiler_StaticMethods_requestUpdate(this)},100)})}};
+module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
     main {
       --app-bar-height: 40px;
       width: 100%;
@@ -2885,6 +2891,9 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
     }
     section {
       height: calc(100% - var(--app-bar-height) - 2rem);
+    }
+    section[embed=""] {
+      height: 100%;
     }
     @media only screen and (min-width: 600px) {
       .title {
@@ -3009,8 +3018,9 @@ module$exports$google3$ux$material$theme_generator$web_app$src$generated$2dapp$G
       color: var(--md-sys--color-primary);
     }
   </style>
-`;function module$contents$google3$ux$material$theme_generator$web_app$src$theme_applyTheme(theme,isDark){isDark?module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.dark):module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.light)}const module$contents$google3$ux$material$theme_generator$web_app$src$theme_target=document.body;
-function module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme){for(const [key__tsickle_destructured_1,value__tsickle_destructured_2]of Object.entries(theme)){const value=value__tsickle_destructured_2,token=key__tsickle_destructured_1.replace(/([a-z])([A-Z])/g,"$1-$2").toLowerCase();module$contents$google3$ux$material$theme_generator$web_app$src$theme_target.style.setProperty(`--md-sys-color-${token}`,value)}};let module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p).save();const module$contents$google3$ux$material$theme_generator$web_app$src$main_target=document.body;function module$contents$google3$ux$material$theme_generator$web_app$src$main_renderApp(theme,defaultTab="/dynamic"){module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$render(module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html` ${module$exports$google3$ux$material$theme_generator$web_app$src$theme$default}
+`;const module$contents$google3$ux$material$theme_generator$web_app$src$theme_target=document.body;
+function module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme){for(const [key__tsickle_destructured_1,value__tsickle_destructured_2]of Object.entries(theme)){const value=value__tsickle_destructured_2,token=key__tsickle_destructured_1.replace(/([a-z])([A-Z])/g,"$1-$2").toLowerCase();module$contents$google3$ux$material$theme_generator$web_app$src$theme_target.style.setProperty(`--md-sys-color-${token}`,value)}};const module$contents$google3$ux$material$theme_generator$web_app$src$main_target=document.body;module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.addListener(theme=>{(0,module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.isDark)()?module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.dark):module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.light)});
+function module$contents$google3$ux$material$theme_generator$web_app$src$main_renderApp(theme,defaultTab="/dynamic"){module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$render(module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html` ${module$exports$google3$ux$material$theme_generator$web_app$src$theme$default}
       <generated-app default=${defaultTab} .theme=${theme}></generated-app>`,document.body);const tempDiv=document.createElement("div");module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$render([module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
@@ -3020,20 +3030,19 @@ function module$contents$google3$ux$material$theme_generator$web_app$src$theme_s
     />`,module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<meta
       name="viewport"
       content="width=device-width,initial-scale=1.0"
-    />`],tempDiv);const links=Array.from(tempDiv.children);for(const link of links)document.head.appendChild(link)}const module$contents$google3$ux$material$theme_generator$web_app$src$main_mods=["share"];for(const mod of module$contents$google3$ux$material$theme_generator$web_app$src$main_mods)window.localStorage.setItem(`mod-${mod}`,"false");
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{module$contents$google3$ux$material$theme_generator$web_app$src$theme_applyTheme(module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme,e.matches)});
-module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("brightness-changes",e=>{const isDark=!0===e.detail;module$contents$google3$ux$material$theme_generator$web_app$src$theme_applyTheme(module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme,isDark);(0,module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.setDark)(isDark)});
-module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("theme-change",e=>{const theme=e.detail;module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme=theme;module$contents$google3$ux$material$theme_generator$web_app$src$theme_applyTheme(theme,(0,module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.isDark)())});
-module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("select-image",async e=>{const url=e.detail,seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(url),customColors=module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme.customColors||[],theme=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed).save();theme.imageUrl=url;theme.customColors=customColors;
-module$contents$google3$ux$material$theme_generator$web_app$src$main_target.dispatchEvent(new CustomEvent("theme-change",{detail:theme,bubbles:!0,composed:!0}))});module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("theme-action",e=>{const action=e.detail;action(module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme)});
-module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("create-url",async e=>{const callback=e.detail.callback;let url=location.toString();url.includes("?")&&(url=url.split("?")[0]);let suffix="";const source=Object.assign({},module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme.source);null===source||void 0===source?!0:delete source.imageUrl;null===source||void 0===source?!0:delete source.seed;let seed=module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme.seed||
-"";seed.startsWith("#")||(seed=`#${seed}`);var JSCompiler_object_inline_seed_0=seed?seed:"",JSCompiler_object_inline_customColors_1=module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme.customColors||[];if(url.endsWith("/custom"))suffix=suffix+`seed=${JSCompiler_object_inline_seed_0}`+`&primary=${source.primary}`,suffix+=`&secondary=${source.secondary}`,suffix+=`&tertiary=${source.tertiary}`,suffix+=`&neutral=${source.neutral}`,suffix+=`&neutralVariant=${source.neutralVariant}`,
-suffix+=`&error=${source.error}`;else if(url.endsWith("/dynamic")){suffix+=`seed=${module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme.seed}`;const themeUrl=module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme.imageUrl;themeUrl&&!themeUrl.startsWith("blob:")&&(suffix+=`&url=${encodeURIComponent(themeUrl)}`)}0<JSCompiler_object_inline_customColors_1.length&&(suffix+=`&customColors=${JSCompiler_object_inline_customColors_1.map(c=>`${encodeURIComponent(c.name)}:${c.color}:${c.harmonized?
-"1":"0"}`).join(",")}`);suffix=(suffix+"&mods=share").replace(/#/g,"");callback(url+`?${suffix}`)});
-(async function(){if(location.hash.includes("?")){const hashParts=location.hash.split("?");let theme;const paramsMap=hashParts[1].split("&").reduce((acc,param)=>{const [key__tsickle_destructured_1,value__tsickle_destructured_2]=param.split("=");acc[key__tsickle_destructured_1]=value__tsickle_destructured_2;return acc},{});let {seed,primary,secondary,tertiary,neutral,neutralVariant,error,url:uri,customColors,mods}=paramsMap;if(mods){const modParams=mods.split(",");for(const mod of modParams)window.localStorage.setItem(`mod-${mod}`,
-"true")}const themeUrl=decodeURIComponent(uri||"");uri&&(seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(themeUrl));const adapter=seed&&1!==seed.length?module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed):module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);customColors&&(adapter.props.overrides.customColors=
-customColors.split(",").map(c=>{const [name__tsickle_destructured_3,color__tsickle_destructured_4,harmonized__tsickle_destructured_5]=c.split(":");return{name:decodeURIComponent(name__tsickle_destructured_3),color:"#"+color__tsickle_destructured_4,harmonized:"1"===harmonized__tsickle_destructured_5}}));primary&&JSCompiler_StaticMethods_setCustomColor(adapter,"primary","#"+primary);secondary&&JSCompiler_StaticMethods_setCustomColor(adapter,"secondary","#"+secondary);tertiary&&JSCompiler_StaticMethods_setCustomColor(adapter,
-"tertiary","#"+tertiary);neutral&&JSCompiler_StaticMethods_setCustomColor(adapter,"neutral","#"+neutral);neutralVariant&&JSCompiler_StaticMethods_setCustomColor(adapter,"neutralVariant","#"+neutralVariant);error&&JSCompiler_StaticMethods_setCustomColor(adapter,"error","#"+error);theme=adapter.save();uri&&(theme.imageUrl=themeUrl);const matTheme=(module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme=theme)||module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme;
-module$contents$google3$ux$material$theme_generator$web_app$src$main_renderApp(matTheme,hashParts[0]);module$contents$google3$ux$material$theme_generator$web_app$src$theme_applyTheme(matTheme,(0,module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.isDark)())}else{const url=module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images[Math.floor(Math.random()*module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images.length)].wallpaper,
-seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(url),customColors=module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme.customColors||[],theme=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed).save();theme.imageUrl=url;theme.customColors=customColors;module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme=theme;module$contents$google3$ux$material$theme_generator$web_app$src$main_renderApp(module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme);
-module$contents$google3$ux$material$theme_generator$web_app$src$theme_applyTheme(module$contents$google3$ux$material$theme_generator$web_app$src$main_materialTheme,(0,module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.isDark)())}})();document.body.addEventListener("theme-change",e=>{window.parent.postMessage({type:"apply-theme",theme:e.detail},"*")});
+    />`],tempDiv);const links=Array.from(tempDiv.children);for(const link of links)document.head.appendChild(link)}const module$contents$google3$ux$material$theme_generator$web_app$src$main_mods=["share","embed"];for(const mod of module$contents$google3$ux$material$theme_generator$web_app$src$main_mods)window.localStorage.setItem(`mod-${mod}`,"false");
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{var theme=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme;e.matches?module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.dark):module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.light)});
+module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("brightness-changes",e=>{const isDark=!0===e.detail;var theme=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme;isDark?module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.dark):module$contents$google3$ux$material$theme_generator$web_app$src$theme_setTheme(theme.light);(0,module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.setDark)(isDark)});
+module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("theme-change",e=>{JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,e.detail)});
+module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("select-image",async e=>{const url=e.detail,seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(url),customColors=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme.customColors||[],theme=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed).save();theme.imageUrl=url;theme.customColors=customColors;
+module$contents$google3$ux$material$theme_generator$web_app$src$main_target.dispatchEvent(new CustomEvent("theme-change",{detail:theme,bubbles:!0,composed:!0}));JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,theme)});module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("theme-action",e=>{const action=e.detail;action(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme)});
+module$contents$google3$ux$material$theme_generator$web_app$src$main_target.addEventListener("create-url",async e=>{const callback=e.detail.callback;let url=location.toString();url.includes("?")&&(url=url.split("?")[0]);let suffix="";const theme=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme,source=Object.assign({},theme.source);null===source||void 0===source?!0:delete source.imageUrl;null===source||void 0===source?!0:delete source.seed;let seed=theme.seed||
+"";seed.startsWith("#")||(seed=`#${seed}`);var JSCompiler_object_inline_seed_0=seed?seed:"";if(url.endsWith("/custom"))suffix=suffix+`seed=${JSCompiler_object_inline_seed_0}`+`&primary=${source.primary}`,suffix+=`&secondary=${source.secondary}`,suffix+=`&tertiary=${source.tertiary}`,suffix+=`&neutral=${source.neutral}`,suffix+=`&neutralVariant=${source.neutralVariant}`,suffix+=`&error=${source.error}`;else if(url.endsWith("/dynamic")){suffix+=`seed=${theme.seed}`;const themeUrl=theme.imageUrl;themeUrl&&
+!themeUrl.startsWith("blob:")&&(suffix+=`&url=${encodeURIComponent(themeUrl)}`)}(null===theme||void 0===theme?0:theme.customColors)&&0<theme.customColors.length&&(suffix+=`&customColors=${theme.customColors.map(c=>`${encodeURIComponent(c.name)}:${c.color}:${c.harmonized?"1":"0"}`).join(",")}`);suffix=(suffix+"&mods=share").replace(/#/g,"");callback(url+`?${suffix}`)});
+(async function(){const route=location.hash.slice(1);if(location.hash.includes("?")){const hashParts=location.hash.split("?");let theme;const paramsMap=hashParts[1].split("&").reduce((acc,param)=>{const [key__tsickle_destructured_1,value__tsickle_destructured_2]=param.split("=");acc[key__tsickle_destructured_1]=value__tsickle_destructured_2;return acc},{});let {seed,primary,secondary,tertiary,neutral,neutralVariant,error,url:uri,customColors,mods}=paramsMap;if(mods){const modParams=mods.split(",");
+for(const mod of modParams)window.localStorage.setItem(`mod-${mod}`,"true")}const themeUrl=decodeURIComponent(uri||"");uri&&(seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(themeUrl));const adapter=seed&&1!==seed.length?module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed):module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);
+customColors&&(adapter.props.overrides.customColors=customColors.split(",").map(c=>{const [name__tsickle_destructured_3,color__tsickle_destructured_4,harmonized__tsickle_destructured_5]=c.split(":");return{name:decodeURIComponent(name__tsickle_destructured_3),color:"#"+color__tsickle_destructured_4,harmonized:"1"===harmonized__tsickle_destructured_5}}));primary&&JSCompiler_StaticMethods_setCustomColor(adapter,"primary","#"+primary);secondary&&JSCompiler_StaticMethods_setCustomColor(adapter,"secondary",
+"#"+secondary);tertiary&&JSCompiler_StaticMethods_setCustomColor(adapter,"tertiary","#"+tertiary);neutral&&JSCompiler_StaticMethods_setCustomColor(adapter,"neutral","#"+neutral);neutralVariant&&JSCompiler_StaticMethods_setCustomColor(adapter,"neutralVariant","#"+neutralVariant);error&&JSCompiler_StaticMethods_setCustomColor(adapter,"error","#"+error);theme=adapter.save();uri&&(theme.imageUrl=themeUrl);JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,
+theme);const matTheme=theme||module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme;JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,matTheme);module$contents$google3$ux$material$theme_generator$web_app$src$main_renderApp(matTheme,hashParts[0])}else{if(!route.startsWith("/custom")){const url=module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images[Math.floor(Math.random()*
+module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images.length)].wallpaper,seed=await module$contents$google3$ux$material$theme_generator$src$theme$index_seedFromImage(url),customColors=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme.customColors||[],theme=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(seed).save();theme.imageUrl=url;theme.customColors=customColors;JSCompiler_StaticMethods_setTheme(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState,
+theme)}module$contents$google3$ux$material$theme_generator$web_app$src$main_renderApp(module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme)}})();document.body.addEventListener("theme-change",e=>{window.parent.postMessage({type:"apply-theme",theme:e.detail},"*")});
