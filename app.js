@@ -2408,6 +2408,7 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
         max-width: 520px;
         min-width: 330px;
         height: 660px;
+        margin-top: 3rem;
       }
       .options {
         overflow-y: auto;
@@ -2417,7 +2418,7 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
         overflow-y: auto;
       }
       .core-colors {
-        margin-top: 4rem;
+        margin-top: 2rem;
       }
       .colors {
         max-width: 330px;
