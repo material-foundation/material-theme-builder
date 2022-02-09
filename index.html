@@ -44,6 +44,7 @@
       window.gtag("js", startTime);
       window.gtag("config", "G-D9MC9PMX4M", {
         cookie_flags: "SameSite=None;Secure",
+        debug_mode: false,
       });
       // debug_mode: true,
       window.dataLayer.push({
@@ -58,14 +59,20 @@
           timeonpage: `${endTime.getTime() - startTime.getTime()}`,
         });
       });
-      window.parent.onmessage = (e) => {
-        const { type, theme } = e.data;
-        if (type === "apply-theme") {
-          const hash = window.location.hash.slice(1) || "";
-          const themeType = hash.startsWith("/custom") ? "custom" : "dynamic";
-          window.gtag("apply_theme", themeType, theme);
-        }
-      };
+      document.addEventListener("apply-theme", (e) => {
+        const theme = e.detail;
+        const hash = window.location.hash.slice(1) || "";
+        const themeType = hash.startsWith("/custom") ? "custom" : "dynamic";
+        window.gtag("send", "event", "apply_theme", themeType, {
+          seed: theme.seed,
+          primary: theme.source.primary,
+          secondary: theme.source.secondary,
+          tertiary: theme.source.tertiary,
+          neutral: theme.source.neutral,
+          neutralVariant: theme.source.neutralVariant,
+          customColors: theme.customColors,
+        });
+      });
     </script>
 
     <script src="third_party/jszip.min.js"></script>
