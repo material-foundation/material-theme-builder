@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Material Theme Builder</title>
-    <link rel="icon" href="assets/favicon.svg">
+    <link rel="icon" href="assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -64,7 +64,8 @@
         const theme = e.detail;
         const hash = window.location.hash.slice(1) || "";
         const themeType = hash.startsWith("/custom") ? "custom" : "dynamic";
-        window.gtag("send", "event", "apply_theme", themeType, {
+        window.gtag("event", "theme", {
+          type: themeType,
           seed: theme.seed,
           primary: theme.source.primary,
           secondary: theme.source.secondary,
