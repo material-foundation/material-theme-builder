@@ -1622,7 +1622,7 @@ this.themeName).download(),null===(_b$jscomp$0=platform.callback)||void 0===_b$j
       --mdc-theme-text-disabled-on-dark: var(--md-sys-color-on-surface);
     }
   `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$state_state(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$components$export$2dbutton$ExportButton.prototype,"showExport",void 0);
-module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$components$export$2dbutton$ExportButton.prototype,"theme",void 0);
+module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object,hasChanged:()=>!0}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$components$export$2dbutton$ExportButton.prototype,"theme",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$components$export$2dbutton$ExportButton.prototype,"plugin",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$components$export$2dbutton$ExportButton.prototype,"dispatch",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$components$export$2dbutton$ExportButton.prototype,"json",void 0);
@@ -1686,7 +1686,7 @@ module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$con
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean,reflect:!0}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone$DropZone.prototype,"multiple",void 0);
 module$exports$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone$DropZone=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("drop-zone")],module$exports$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone$DropZone);
 function module$contents$google3$ux$material$theme_generator$ui$drop_zone$drop$2dzone_uploadFile(cb,options){const elem=document.createElement("input");elem.type="file";const {accept,multiple}=options||{};multiple?(elem.multiple=multiple,elem.setAttribute("webkitdirectory",""),elem.setAttribute("mozdirectory","")):accept&&(elem.accept=accept);elem.addEventListener("change",e=>{cb(e.target.files)});elem.click()};var JSCompiler_StaticMethods_notifyListeners=function(JSCompiler_StaticMethods_notifyListeners$self){const theme=JSCompiler_StaticMethods_notifyListeners$self.theme;JSCompiler_StaticMethods_notifyListeners$self.listeners.forEach(listener=>listener(theme))},JSCompiler_StaticMethods_setTheme=function(JSCompiler_StaticMethods_setTheme$self,theme){JSCompiler_StaticMethods_setTheme$self.theme=theme;JSCompiler_StaticMethods_notifyListeners(JSCompiler_StaticMethods_setTheme$self)},module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState=
-new class{constructor(theme){this.theme=theme;this.listeners=[]}addListener(listener){this.listeners.push(listener)}removeListener(listener){this.listeners=this.listeners.filter(l=>l!==listener)}}(module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p).save());const module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images=[module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("1","Wallpaper 1 red sand dunes"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("2","Wallpaper 2 green mountain top"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("3","Wallpaper 3 orange desert"),
+new class{constructor(theme){this.theme=theme;this.listeners=[]}addListener(listener){this.listeners.push(listener)}removeListener(listener){this.listeners=this.listeners.filter(l=>l!==listener)}}(module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p).save());function module$contents$google3$ux$material$theme_generator$web_app$src$utils$live_live(){return module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property(Object.assign(Object.assign({},void 0),{hasChanged:()=>!0,attribute:!1,type:Object}))};const module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images=[module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("1","Wallpaper 1 red sand dunes"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("2","Wallpaper 2 green mountain top"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("3","Wallpaper 3 orange desert"),
 module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("4","Wallpaper 4 blue mountains"),module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img("5","Wallpaper 5 green rocky mountains")];
 var module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.images=[...module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_images];this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){const theme=this.state.theme;
 return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div class="images row">
@@ -1724,7 +1724,7 @@ return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src
       border-radius: 8px;
     }
   `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Array}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Array)],module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector.prototype,"images",void 0);
-module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector.prototype,"theme",void 0);
+module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$ux$material$theme_generator$web_app$src$utils$live_live(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector.prototype,"theme",void 0);
 module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("wallpaper-selector")],module$exports$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector$WallpaperSelector);
 function module$contents$google3$ux$material$theme_generator$web_app$src$components$wallpaper$2dselector_img(name,description){return{thumbnail:`${"https://material-foundation.github.io/material-theme-builder"}/assets/${name}_thumb.webp`,wallpaper:`${"https://material-foundation.github.io/material-theme-builder"}/assets/${name}_wallpaper.webp`,description}};var module$exports$google3$ux$material$theme_generator$web_app$src$components$add$2dextended$2dcolor$AddExtendedColor=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<svg
       width="318"
@@ -2210,7 +2210,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$components$extend
     .extended-color-row > .color-family > .color-item:last-child {
       border-bottom-right-radius: 16px;
     }
-  `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview.prototype,"theme",void 0);
+  `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$ux$material$theme_generator$web_app$src$utils$live_live(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview.prototype,"theme",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$state_state(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview.prototype,"showMoreColorInfo",void 0);
 module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("theme-preview")],module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview);function module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_buildTonalPallets(theme){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div class="tonal-palettes">
     <span class="subtitle2">Primary</span>
@@ -2332,8 +2332,9 @@ _a?_a:{}),customColors=theme.customColors||[];return module$exports$google3$thir
 source[key$jscomp$0]=color;adapter.props.overrides.customColors=customColors;for(const [key__tsickle_destructured_1,value__tsickle_destructured_2]of Object.entries(source)){const key=key__tsickle_destructured_1,value=value__tsickle_destructured_2;key&&value&&"seed"!==key&&JSCompiler_StaticMethods_setCustomColor(adapter,key,value)}JSCompiler_StaticMethods_updateTheme(this,adapter.save())}firstUpdated(){this.state.addListener(state=>{this.theme=state;JSCompiler_StaticMethods_requestUpdate(this)});this.theme=
 this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
     main {
+      height: calc(100vh - var(--app-bar-height));
+      width: 100%;
       overflow-y: auto;
-      height: 100%;
     }
     article {
       padding: var(--padding);
@@ -2345,6 +2346,7 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
       padding: auto;
     }
     section {
+      padding-top: var(--app-bar-height);
       width: 100%;
     }
     .title {
@@ -2371,7 +2373,8 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
       margin-top: 2rem;
     }
     .app-preview {
-      height: 800px;
+      /* height: 800px; */
+      height: 100%;
       position: relative;
     }
     app-preview {
@@ -2382,28 +2385,29 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
       transform: translate(-50%, -50%);
     }
     @media only screen and (min-width: 935px) {
-      article {
-        min-width: 360px;
-      }
-      app-preview {
-        flex: 1;
-        width: 75%;
-        height: 80%;
-      }
       main {
         display: flex;
         flex-direction: row;
         height: 100%;
         overflow-y: unset;
       }
+      article {
+        min-width: 360px;
+      }
+      app-preview {
+        flex: 1;
+        width: 75%;
+        height: 90%;
+        top: 50%;
+      }
       section {
         width: unset;
       }
       .app-preview {
         flex: 1;
-        height: 100%;
         max-width: 520px;
         min-width: 330px;
+        height: 660px;
       }
       .options {
         overflow-y: auto;
@@ -2413,7 +2417,7 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
         overflow-y: auto;
       }
       .core-colors {
-        margin-top: 8rem;
+        margin-top: 4rem;
       }
       .colors {
         max-width: 330px;
@@ -2423,7 +2427,11 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
       .app-preview {
         padding: var(--padding);
         position: relative;
+      }
+      .theme-preview {
         border-left: 1px solid var(--md-sys-color-outline);
+      }
+      .options {
         border-right: 1px solid var(--md-sys-color-outline);
       }
     }
@@ -2431,7 +2439,7 @@ this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$sr
       margin-top: 1rem;
     }
   `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$query_query("theme-preview"),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",module$exports$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview$ThemePreview)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.prototype,"preview",void 0);
-module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.prototype,"theme",void 0);
+module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$ux$material$theme_generator$web_app$src$utils$live_live(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.prototype,"theme",void 0);
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("custom-base")],module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase);var module$exports$google3$ux$material$theme_generator$web_app$src$components$add$2dwallpaper$AddWallpaper=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<div
       role="button"
       aria-label="Add your wallpaper"
@@ -2559,7 +2567,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.Dyn
       justify-content: flex-start;
       padding-left: 3rem;
       padding-right: 3rem;
-      margin-top: 10rem;
+      margin-top: 2rem;
       margin-bottom: 5rem;
       user-select: none;
       max-width: 430px;
@@ -2637,12 +2645,16 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.Dyn
       grid-template-columns: repeat(5, minmax(var(--color-size), 1fr));
     }
     @media only screen and (min-width: 720px) {
+      article {
+        margin-top: 10rem;
+      }
       section {
         display: flex;
         flex-direction: row;
         height: 100%;
         width: 100vw;
         max-width: unset;
+        overflow-y: hidden;
       }
       add-wallpaper {
         position: absolute;
@@ -2655,16 +2667,17 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.Dyn
       }
       .wallpaper {
         flex: 1;
-        height: 100%;
+        /* height: 100%; */
+        height: unset;
       }
       .options {
         flex: 1;
-        overflow-y: auto;
-        height: 100%;
+        /* overflow-y: auto; */
+        /* height: 100%; */
       }
     }
   `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$query_query("#wallpaper-container"),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",HTMLElement)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase.prototype,"wallpaper",void 0);
-module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase.prototype,"theme",void 0);
+module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$ux$material$theme_generator$web_app$src$utils$live_live(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase.prototype,"theme",void 0);
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("dynamic-base")],module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.DynamicBase);var module$exports$google3$ux$material$theme_generator$web_app$src$components$info$2ddialog$InfoDialog=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.showInfoDialog=!1}render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<mwc-dialog
       ?open=${this.showInfoDialog}
       @closed=${()=>{this.showInfoDialog=!1}}
@@ -2788,7 +2801,7 @@ theme);location.hash="#/dynamic"}},JSCompiler_StaticMethods_customTab=function(J
 (location.hash="#/custom")};
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){var _a;super(...arguments);this.darkMode=module$contents$google3$ux$material$theme_generator$web_app$src$pages$root_isDark();this.isDynamic=this.showInfoDialog=!1;this.showShare="true"===window.localStorage.getItem("mod-share");this.showJson="true"===window.localStorage.getItem("mod-json");this.saveTheme=
 "true"===window.localStorage.getItem("mod-save");this.isEmbed=(null===(_a=null===location||void 0===location?void 0:location.hash)||void 0===_a?0:_a.includes("embed"))?!0:!1;this.message=""}render(){return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<main>
-      ${this.isEmbed?"":module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html` <header>
+      ${!0===this.isEmbed?"":module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html` <header>
             <div class="section header-left">
               <div class="logo">${module$exports$google3$ux$material$theme_generator$assets$svgs$material$2dlogo$default}</div>
               <span class="title">Material Theme Builder</span>
@@ -2831,9 +2844,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
               ></mwc-icon-button>
             </div>
           </header>`}
-      <section ?embed=${this.isEmbed}>
-        <slot></slot>
-      </section>
+      <section ?embed=${this.isEmbed}><slot></slot></section>
       <mwc-snackbar
         ?open=${""!==this.message}
         labelText="${this.message}"
@@ -2843,23 +2854,33 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
       <info-dialog .showInfoDialog=${this.showInfoDialog}></info-dialog>
     </main>`}firstUpdated(){module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.addListener(state=>{this.theme=state});this.theme=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme;this.addEventListener("show-snackbar",e=>{this.message=e.detail});window.addEventListener("resize",()=>{this.debounce&&clearTimeout(this.debounce);this.debounce=window.setTimeout(()=>{this.debounce=void 0;JSCompiler_StaticMethods_requestUpdate(this)},100)})}};
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
+    :host {
+      --app-bar-height: 50px;
+      /* width: 100%; */
+    }
     main {
-      --app-bar-height: 40px;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
       display: flex;
       flex-direction: column;
+      position: relative;
     }
     header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--app-bar-height);
       display: flex;
+      padding: 1rem;
+      width: calc(100vw - 2rem);
       align-items: center;
       justify-content: space-evenly;
-      padding: 1rem;
       color: var(--md-sys-color-on-background);
       border-bottom: var(--md-sys-color-outline) solid 1px;
       font-family: var(--md-sys-font-family);
-      height: var(--app-bar-height);
+      z-index: 1;
+      background-color: var(--md-sys-color-background);
     }
     .header-left {
       display: flex;
@@ -2877,6 +2898,9 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
       white-space: nowrap;
       font-weight: 500;
       margin-left: 1rem;
+      display: none;
+    }
+    .logo {
       display: none;
     }
     .logo > svg {
@@ -2900,20 +2924,33 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
       margin-left: 10px;
     }
     section {
-      height: calc(100% - var(--app-bar-height) - 2rem);
+      flex: 1;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: var(--app-bar-height);
     }
-    section[embed=""] {
+    /* section[embed=""] {
       height: 100%;
+    } */
+    @media only screen and (min-width: 400px) {
+      .logo {
+        display: block;
+      }
     }
     @media only screen and (min-width: 600px) {
       .title {
         display: block;
       }
+      /* main {
+        overflow: hidden;
+      } */
     }
   `;module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Boolean)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.prototype,"darkMode",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Boolean)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.prototype,"showInfoDialog",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Boolean}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Boolean)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.prototype,"isDynamic",void 0);
-module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.prototype,"theme",void 0);
+module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$ux$material$theme_generator$web_app$src$utils$live_live(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.prototype,"theme",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$state_state(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.prototype,"message",void 0);
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage=module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$custom$2delement$customElement("root-page")],module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage);
 function module$contents$google3$ux$material$theme_generator$web_app$src$pages$root_isDark(){const saved=window.localStorage.getItem("darkMode"),systemDark=window.matchMedia("(prefers-color-scheme: dark)").matches;return"true"===(saved||systemDark.toString())}module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.isDark=module$contents$google3$ux$material$theme_generator$web_app$src$pages$root_isDark;
@@ -2931,6 +2968,7 @@ key__tsickle_destructured_5,value=value__tsickle_destructured_6;if(route.include
 function module$contents$google3$ux$material$theme_generator$web_app$src$router_fixRegex(route){const nameWithParameters=route.replace(RegExp(":([a-zA-Z0-9_-]+)"),match=>`(?<${match.slice(1)}>[a-zA-Z0-9_\\-.,:;+*^%$@!]+)`);return new RegExp(`^${nameWithParameters}$`)}
 function module$contents$google3$ux$material$theme_generator$web_app$src$router_getArgsForRoute(route){for(const key of Array.from(module$exports$google3$ux$material$theme_generator$web_app$src$router$routes.keys())){const regMatch=route.match(module$contents$google3$ux$material$theme_generator$web_app$src$router_fixRegex(key));if(null!==regMatch)return regMatch}return null};var JSCompiler_StaticMethods_updateRoute=async function(JSCompiler_StaticMethods_updateRoute$self){JSCompiler_StaticMethods_updateRoute$self.loading=!0;JSCompiler_StaticMethods_updateRoute$self.template=await module$contents$google3$ux$material$theme_generator$web_app$src$router_renderRoute(JSCompiler_StaticMethods_updateRoute$self.theme);JSCompiler_StaticMethods_updateRoute$self.loading=!1},module$exports$google3$ux$material$theme_generator$web_app$src$generated$2dapp$GeneratedApp=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);
 this.template=null;this.loading=!0;this.default="/"}render(){return this.loading?module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`Loading...`:this.template}async firstUpdated(){window.addEventListener("hashchange",()=>JSCompiler_StaticMethods_updateRoute(this));await JSCompiler_StaticMethods_updateRoute(this);""===window.location.hash&&(window.location.hash=this.default)}};
+module$exports$google3$ux$material$theme_generator$web_app$src$generated$2dapp$GeneratedApp.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css``;
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$state_state(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$generated$2dapp$GeneratedApp.prototype,"loading",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property(),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$generated$2dapp$GeneratedApp.prototype,"default",void 0);
 module$exports$google3$third_party$javascript$tslib$tslib$__decorate([module$contents$google3$third_party$javascript$lit$packages$reactive$2delement$src$decorators$property_property({type:Object}),module$exports$google3$third_party$javascript$tslib$tslib$__metadata("design:type",Object)],module$exports$google3$ux$material$theme_generator$web_app$src$generated$2dapp$GeneratedApp.prototype,"theme",void 0);

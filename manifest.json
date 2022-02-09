@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/web-manifest",
+    "short_name": "material-theme-builder",
+    "name": "Material Theme Builder",
+    "description": "Visualize dynamic color and create a custom scheme",
+    "scope": "/",
+    "background_color": "#FFFBFE",
+    "theme_color": "#6750A4",
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "any"
+}
