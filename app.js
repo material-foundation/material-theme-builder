@@ -2568,7 +2568,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.Dyn
       justify-content: flex-start;
       padding-left: 3rem;
       padding-right: 3rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
       margin-bottom: 5rem;
       user-select: none;
       max-width: 430px;
@@ -2673,7 +2673,7 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$dynamic.Dyn
       }
       .options {
         flex: 1;
-        /* overflow-y: auto; */
+        overflow-y: auto;
         /* height: 100%; */
       }
     }
@@ -2855,9 +2855,16 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
       <info-dialog .showInfoDialog=${this.showInfoDialog}></info-dialog>
     </main>`}firstUpdated(){module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.addListener(state=>{this.theme=state});this.theme=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState.theme;this.addEventListener("show-snackbar",e=>{this.message=e.detail});window.addEventListener("resize",()=>{this.debounce&&clearTimeout(this.debounce);this.debounce=window.setTimeout(()=>{this.debounce=void 0;JSCompiler_StaticMethods_requestUpdate(this)},100)})}};
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPage.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
-    :host {
+    main {
       --app-bar-height: 50px;
+      --inset-top: env(safe-area-inset-top, 0px);
+      --top: calc(var(--app-bar-height) + var(--inset-top));
       /* width: 100%; */
+    }
+    @media (min-width: 600px) {
+      main {
+        --app-bar-height: 64px;
+      }
     }
     main {
       height: 100vh;
@@ -2865,13 +2872,14 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
       display: flex;
       flex-direction: column;
       position: relative;
+      overflow: hidden;
     }
     header {
       position: fixed;
-      top: 0;
+      top: var(--inset-top);
       left: 0;
       right: 0;
-      height: var(--app-bar-height);
+      height: var(--top);
       display: flex;
       padding: 1rem;
       width: calc(100vw - 2rem);
@@ -2882,6 +2890,14 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
       font-family: var(--md-sys-font-family);
       z-index: 1;
       background-color: var(--md-sys-color-background);
+    }
+    section {
+      flex: 1;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: var(--top);
     }
     .header-left {
       display: flex;
@@ -2923,14 +2939,6 @@ module$exports$google3$ux$material$theme_generator$web_app$src$pages$root.RootPa
     }
     mwc-icon-button {
       margin-left: 10px;
-    }
-    section {
-      flex: 1;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: var(--app-bar-height);
     }
     /* section[embed=""] {
       height: 100%;
