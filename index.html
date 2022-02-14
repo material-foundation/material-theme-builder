@@ -65,6 +65,15 @@
         const route = window.location.hash.slice(1) || "/";
         window.gtag("event", type, {...data, route});
       });
+      window.addEventListener('hashchange', () => {
+        const route = window.location.hash.slice(1) || "/";
+        const page = route.startsWith('/custom') ? 'Custom' : 'Dynamic';
+        window.gtag('event', 'screen_view', {
+          'app_name': document.title,
+          'screen_name' : page,
+          'route' : route,
+        });
+      });
     </script>
 
     <script src="third_party/jszip.min.js"></script>
