@@ -60,24 +60,14 @@
           timeonpage: `${endTime.getTime() - startTime.getTime()}`,
         });
       });
-      document.addEventListener("apply-theme", (e) => {
-        const theme = e.detail;
-        const hash = window.location.hash.slice(1) || "";
-        const themeType = hash.startsWith("/custom") ? "custom" : "dynamic";
-        window.gtag("event", "theme", {
-          type: themeType,
-          seed: theme.seed,
-          primary: theme.source.primary,
-          secondary: theme.source.secondary,
-          tertiary: theme.source.tertiary,
-          neutral: theme.source.neutral,
-          neutralVariant: theme.source.neutralVariant,
-          customColors: theme.customColors,
-        });
+      document.addEventListener("log-event", (e) => {
+        const {type, data} = e.detail;
+        const route = window.location.hash.slice(1) || "/";
+        window.gtag("event", type, {...data, route});
       });
     </script>
 
     <script src="third_party/jszip.min.js"></script>
-    <script src="app.js?version=1.0.6"></script>
+    <script src="app.js?version=1.0.7"></script>
   </body>
 </html>
