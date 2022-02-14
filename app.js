@@ -2267,7 +2267,7 @@ function module$contents$google3$ux$material$theme_generator$web_app$src$compone
     <div class="tonal-row">
       ${group?items.map(color=>{const [key__tsickle_destructured_1,value__tsickle_destructured_2]=color;return module$contents$google3$ux$material$theme_generator$web_app$src$components$theme$2dpreview_tonalBox(`${key__tsickle_destructured_1}`,value__tsickle_destructured_2)}):{}}
     </div>
-  </div>`};var module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom={},JSCompiler_StaticMethods_updateThemeColors=function(JSCompiler_StaticMethods_updateThemeColors$self,customColors){const theme=JSCompiler_StaticMethods_updateThemeColors$self.state.theme;theme.customColors=customColors.filter(c=>""!==c.name);JSCompiler_StaticMethods_updateTheme(JSCompiler_StaticMethods_updateThemeColors$self,theme)},JSCompiler_StaticMethods_updateTheme=function(JSCompiler_StaticMethods_updateTheme$self,
+  </div>`};function module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent(type,data){document.dispatchEvent(new CustomEvent("log-event",{detail:{type,data:JSON.parse(JSON.stringify(data))},bubbles:!0,composed:!0}))};var module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom={},JSCompiler_StaticMethods_updateThemeColors=function(JSCompiler_StaticMethods_updateThemeColors$self,customColors){const theme=JSCompiler_StaticMethods_updateThemeColors$self.state.theme;theme.customColors=customColors.filter(c=>""!==c.name);JSCompiler_StaticMethods_updateTheme(JSCompiler_StaticMethods_updateThemeColors$self,theme)},JSCompiler_StaticMethods_updateTheme=function(JSCompiler_StaticMethods_updateTheme$self,
 theme){window.localStorage.setItem("current-theme",JSON.stringify(theme));JSCompiler_StaticMethods_setTheme(JSCompiler_StaticMethods_updateTheme$self.state,theme)};
 module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase=class extends module$exports$google3$third_party$javascript$lit$packages$lit$2delement$src$lit$2delement$LitElement{constructor(){super(...arguments);this.isEmbed=location.hash.includes("embed");this.state=module$exports$google3$ux$material$theme_generator$web_app$src$state$themeState}render(){var _a;const theme=this.state.theme,source=Object(null!==(_a=null===theme||void 0===theme?void 0:theme.source)&&void 0!==
 _a?_a:{}),customColors=theme.customColors||[];return module$exports$google3$third_party$javascript$lit$packages$lit$2dhtml$src$lit$2dhtml$html`<main>
@@ -2283,20 +2283,20 @@ _a?_a:{}),customColors=theme.customColors||[];return module$exports$google3$thir
               label="Primary"
               description="Acts as custom source color"
               .value=${source.primary}
-              @color-change=${e=>this.onColorChange("primary",e.detail,{seed:!0})}
+              @color-change=${e=>{const value=e.detail;source.primary.color=value;this.onColorChange("primary",source.primary,{seed:!0});module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"primary",color:value,property:"color"})}}
             ></core-color-input>
             <core-color-input label="Secondary"
-            @color-change=${e=>this.onColorChange("secondary",e.detail)}
+            @color-change=${e=>{const value=e.detail;source.secondary.color=value;this.onColorChange("secondary",source.secondary);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"secondary",color:value,property:"color"})}}
             .value=${source.secondary}></core-color-input>
             </core-color-input>
             <core-color-input label="Tertiary"
-             @color-change=${e=>this.onColorChange("tertiary",e.detail)}
+             @color-change=${e=>{const value=e.detail;source.tertiary.color=value;this.onColorChange("tertiary",source.tertiary);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"tertiary",color:value,property:"color"})}}
             .value=${source.tertiary}></core-color-input>
             </core-color-input>
             <core-color-input
               label="Neutral"
               description="Used for background and surfaces"
-               @color-change=${e=>this.onColorChange("neutral",e.detail)}
+               @color-change=${e=>{const value=e.detail;source.neutral.color=value;this.onColorChange("neutral",source.neutral);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"neutral",color:value,property:"color"})}}
               .value=${source.neutral}
             ></core-color-input>
           </div>
@@ -2312,13 +2312,13 @@ _a?_a:{}),customColors=theme.customColors||[];return module$exports$google3$thir
                     label=${c.name}
                     value=${c.color}
                     ?harmonized=${c.harmonized||!1}
-                    @color-change=${e=>{c.color=e.detail;JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}
-                    @harmonized-change=${e=>{c.harmonized=e.detail;JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}
-                    @label-change=${e=>{c.name=e.detail;JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}
+                    @color-change=${e=>{c.color=e.detail;module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-extended-color",Object.assign(Object.assign({},c),{property:"color"}));JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}
+                    @harmonized-change=${e=>{c.harmonized=e.detail;module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-extended-color",Object.assign(Object.assign({},c),{property:"harmonized"}));JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}
+                    @label-change=${e=>{c.name=e.detail;module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-extended-color",Object.assign(Object.assign({},c),{property:"name"}));JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}
                   >
                   </extended-color-input>
                 `)}
-            <add-extended-color @click=${()=>{const color=module$contents$google3$ux$material$theme_generator$src$utils_randomColor(),name=`color-${Math.floor(100*Math.random())}`;customColors.push({name,color,harmonized:!1});this.dispatchEvent(new CustomEvent("log-event",{detail:{type:"add-custom-color",data:{name,color,"custom-colors":customColors.length}},bubbles:!0,composed:!0}));JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}></add-extended-color>
+            <add-extended-color @click=${()=>{customColors.push({name:`color-${Math.floor(100*Math.random())}`,color:module$contents$google3$ux$material$theme_generator$src$utils_randomColor(),harmonized:!1});module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("add-custom-color",customColors[customColors.length-1]);JSCompiler_StaticMethods_updateThemeColors(this,customColors)}}></add-extended-color>
           </div>
          </div>
         </article>
@@ -2329,8 +2329,8 @@ _a?_a:{}),customColors=theme.customColors||[];return module$exports$google3$thir
        <section class="theme-preview preview">
         <theme-preview></theme-preview>
       </section>
-    </main>`}onColorChange(key$jscomp$0,color,options){var _a;this.dispatchEvent(new CustomEvent("log-event",{detail:{type:"custom-color-change",data:{key:key$jscomp$0,color,seed:(null===options||void 0===options?void 0:options.seed)||!1}},bubbles:!0,composed:!0}));const theme=this.state.theme,source=Object(null!==(_a=null===theme||void 0===theme?void 0:theme.source)&&void 0!==_a?_a:{}),customColors=theme.customColors||[];let adapter;source[key$jscomp$0]=color;if(null===options||void 0===options?
-0:options.seed)adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(color),JSCompiler_StaticMethods_setCustomColor(adapter,key$jscomp$0,color);else{adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);for(const [key__tsickle_destructured_1,value__tsickle_destructured_2]of Object.entries(source)){const key=key__tsickle_destructured_1,value=value__tsickle_destructured_2;
+    </main>`}onColorChange(key$jscomp$0,color,options){var _a;module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("custom-color-change",{key:key$jscomp$0,color,seed:(null===options||void 0===options?void 0:options.seed)||!1});const theme=this.state.theme,source=Object(null!==(_a=null===theme||void 0===theme?void 0:theme.source)&&void 0!==_a?_a:{}),customColors=theme.customColors||[];let adapter;source[key$jscomp$0]=color;if(null===options||void 0===options?0:options.seed)adapter=
+module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$fromColor(color),JSCompiler_StaticMethods_setCustomColor(adapter,key$jscomp$0,color);else{adapter=module$exports$google3$ux$material$theme_generator$src$theme$index$ThemeAdapter$default(module$exports$google3$ux$material$theme_generator$flags$flags.is3p);for(const [key__tsickle_destructured_1,value__tsickle_destructured_2]of Object.entries(source)){const key=key__tsickle_destructured_1,value=value__tsickle_destructured_2;
 key&&value&&"seed"!==key&&JSCompiler_StaticMethods_setCustomColor(adapter,key,value)}}adapter.props.overrides.customColors=customColors;JSCompiler_StaticMethods_updateTheme(this,adapter.save())}firstUpdated(){this.state.addListener(state=>{this.theme=state;JSCompiler_StaticMethods_requestUpdate(this)});this.theme=this.state.theme}};module$exports$google3$ux$material$theme_generator$web_app$src$pages$custom.CustomBase.styles=module$exports$google3$third_party$javascript$lit$packages$reactive$2delement$src$css$2dtag$css`
     main {
       height: calc(100vh - var(--app-bar-height));
