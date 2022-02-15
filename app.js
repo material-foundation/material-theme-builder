@@ -2283,20 +2283,20 @@ _a?_a:{}),customColors=theme.customColors||[];return module$exports$google3$thir
               label="Primary"
               description="Acts as custom source color"
               .value=${source.primary}
-              @color-change=${e=>{const value=e.detail;source.primary.color=value;this.onColorChange("primary",source.primary,{seed:!0});module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"primary",color:value,property:"color"})}}
+              @color-change=${e=>{const value=e.detail;source.primary=value;this.onColorChange("primary",value,{seed:!0});module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"primary",color:value,property:"color"})}}
             ></core-color-input>
             <core-color-input label="Secondary"
-            @color-change=${e=>{const value=e.detail;source.secondary.color=value;this.onColorChange("secondary",source.secondary);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"secondary",color:value,property:"color"})}}
+            @color-change=${e=>{const value=e.detail;source.secondary=value;this.onColorChange("secondary",value);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"secondary",color:value,property:"color"})}}
             .value=${source.secondary}></core-color-input>
             </core-color-input>
             <core-color-input label="Tertiary"
-             @color-change=${e=>{const value=e.detail;source.tertiary.color=value;this.onColorChange("tertiary",source.tertiary);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"tertiary",color:value,property:"color"})}}
+             @color-change=${e=>{const value=e.detail;source.tertiary=value;this.onColorChange("tertiary",value);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"tertiary",color:value,property:"color"})}}
             .value=${source.tertiary}></core-color-input>
             </core-color-input>
             <core-color-input
               label="Neutral"
               description="Used for background and surfaces"
-               @color-change=${e=>{const value=e.detail;source.neutral.color=value;this.onColorChange("neutral",source.neutral);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"neutral",color:value,property:"color"})}}
+               @color-change=${e=>{const value=e.detail;source.neutral=value;this.onColorChange("neutral",value);module$contents$google3$ux$material$theme_generator$web_app$src$utils$log_logEvent("edit-core-color",{name:"neutral",color:value,property:"color"})}}
               .value=${source.neutral}
             ></core-color-input>
           </div>
