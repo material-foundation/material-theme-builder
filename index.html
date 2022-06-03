@@ -13,24 +13,38 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="https://material-foundation.github.io/material-tokens/css/baseline.css"
+      rel="stylesheet"
+    />
     <style>
+      :root {
+        --padding: 20px;
+      }
       body {
-        --plugin-height: 100vh;
-        --plugin-width: 100%;
+        --height: 100vh;
+        --width: 100%;
         margin: 0;
         padding: 0;
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        background-color: var(--md-sys-color-background);
+        color: var(--md-sys-color-on-background);
+      }
+      a {
+        color: var(--md-sys-color-primary);
+        text-decoration: underline;
       }
       body,
-      theme-generator {
+      generated-app {
         outline: none;
-        height: var(--plugin-height);
-        width: var(--plugin-width);
+        height: var(--height);
+        width: var(--width);
       }
     </style>
   </head>
 
   <body class="material-theme">
-    <theme-generator id="root" name="material-theme"></theme-generator>
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-D9MC9PMX4M"
@@ -77,6 +91,6 @@
     </script>
 
     <script src="third_party/jszip.min.js"></script>
-    <script src="app.js?version=1.0.7"></script>
+    <script src="app.js?version=1.0.0"></script>
   </body>
 </html>
