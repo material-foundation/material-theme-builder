@@ -22,7 +22,11 @@ https://material-foundation.github.io/material-theme-builder/
 Material Theme Builder for Figma:
 https://goo.gle/material-theme-builder-figma
 
+
 ## How to use - Figma plugin
+
+⚠ _Token structure in the Material Design Kit and Material Theme Builder have been updated for easier readability and to work with Figma updates. MTB has a migration script built in for the Kit and generated color diagrams.
+Use Swap on elements with the previous token structure to update them to the new structure._ ⚠
 
 #### Setup
 1. Install from the [plugin page](https://www.figma.com/community/plugin/1034969338659738588/Material-Theme-Builder), by clicking **Install** in the top right corner.
