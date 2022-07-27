@@ -22,6 +22,13 @@ https://material-foundation.github.io/material-theme-builder/
 Material Theme Builder for Figma:
 https://goo.gle/material-theme-builder-figma
 
+## What's New
+Both the web and Figma plugin have been updated recently to include:
+1. New UI for custom colors for easier to read labels and descriptive subtitles.
+2. Extended color with harmonization is now on both the Web version and Figma plugin! Your extended colors will carry between Dynamic and Custom scheme. (Harmonization is only to visualize with dynamic color).
+3. Speaking of extended colors, you can now rename and delete from within the plugin.
+4. The new HCT color picker allows to update colors using Hue, Chroma, and Tone. Plus the color picker allows to copy/paste hex code values.
+5. The Figma plugin includes setup settings and a settings modal to toggle certain features off if not needed and even try out Beta features!  
 
 ## How to use - Figma plugin
 
