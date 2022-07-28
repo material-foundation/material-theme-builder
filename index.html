@@ -2,96 +2,10 @@
 <html lang="en">
   <head>
     <title>Material Theme Builder</title>
-    <meta http-equiv="Refresh" content="0; url='https://m3.material.io/theme-builder#/dynamic'" />
-    <link rel="icon" href="assets/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://material-foundation.github.io/material-tokens/css/baseline.css"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --padding: 20px;
-      }
-      body {
-        --height: 100vh;
-        --width: 100%;
-        margin: 0;
-        padding: 0;
-        font-family: 'Google Sans', 'Roboto', sans-serif;
-        background-color: var(--md-sys-color-background);
-        color: var(--md-sys-color-on-background);
-      }
-      a {
-        color: var(--md-sys-color-primary);
-        text-decoration: underline;
-      }
-      body,
-      generated-app {
-        outline: none;
-        height: var(--height);
-        width: var(--width);
-      }
-    </style>
+    <meta http-equiv="Refresh" content="0; url='https://m3.material.io/theme-builder'" />
   </head>
 
-  <body class="material-theme">
-    <theme-builder is3p baseline></theme-builder>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-D9MC9PMX4M"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () {
-        window.dataLayer.push(arguments);
-        console.debug("track", arguments);
-      };
-      const startTime = new Date();
-      window.gtag("js", startTime);
-      window.gtag("config", "G-D9MC9PMX4M", {
-        cookie_flags: "SameSite=None;Secure",
-        debug_mode: false,
-      });
-      // debug_mode: true,
-      window.dataLayer.push({
-        event: "open_plugin",
-        date: startTime.getTime(),
-      });
-      window.addEventListener("beforeunload", function () {
-        const endTime = new Date();
-        window.dataLayer.push({
-          event: "close_plugin",
-          date: endTime.getTime(),
-          timeonpage: `${endTime.getTime() - startTime.getTime()}`,
-        });
-      });
-      document.addEventListener("log-event", (e) => {
-        const {type, data} = e.detail;
-        const route = window.location.hash.slice(1) || "/";
-        window.gtag("event", type, {...data, route});
-      });
-      window.addEventListener('hashchange', () => {
-        const route = window.location.hash.slice(1) || "/";
-        const page = route.startsWith('/custom') ? 'Custom' : 'Dynamic';
-        window.gtag('event', 'screen_view', {
-          'app_name': document.title,
-          'screen_name' : page,
-          'route' : route,
-        });
-      });
-    </script>
-
-    <script src="third_party/jszip.min.js"></script>
-    <script src="app.js?version=1.0.0"></script>
+  <body>
+    <p>Material Theme Builder has been moved to <a href="https://m3.material.io/theme-builder">Material.io</a></p>
   </body>
 </html>
