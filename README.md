@@ -1,4 +1,4 @@
-![cover](https://user-images.githubusercontent.com/10263978/164115188-6437ffcd-ece5-4efa-8f5f-fac9e31f3dcd.png)
+![cover](https://user-images.githubusercontent.com/10263978/228079210-921db0c8-1573-469d-aca9-a34c23c035b4.png)
 
 # Material Theme Builder
 
@@ -38,12 +38,13 @@ Use Swap on elements with the previous token structure to update them to the new
 4. Select and **Swap** to update the theme used in the components.
 5. Assign MD tokens (Figma styles) to custom elements and components, then **swap** to the currently selected theme.
 
-<img width="1456" alt="getstarted" src="https://user-images.githubusercontent.com/10263978/164114726-3637ad9f-ed4d-4f5b-9630-3f62c3380c28.png">
+<img width="1024" alt="how to get started with theme builder" src="https://user-images.githubusercontent.com/10263978/228079269-44a0a810-c936-47c4-b331-ef9d79fe965a.png">
 
 #### Dynamic Color
 1. With Dynamic selected, drop an image in or click to **choose an image** to derive key colors into a scheme from an image. Below the image the source color will update based on the image. The theme’s colors and any elements or components using the theme will update based on the image.
 2. Or enter a source color manually to emulate inputting an image. 
 3. Don’t want to choose an image or color? Randomize the source color with **Shuffle**.
+
 <img width="1456" alt="add image" src="https://user-images.githubusercontent.com/10263978/164114777-62b5dad2-f998-4051-8e66-62c8ff2314fd.png">
 
 #### Create a custom theme
@@ -52,7 +53,7 @@ Your brand’s colors can still take advantage of the Material You color story w
 1. With **Custom** selected, select the color input for Primary. 
 2. A full scheme can be generated from Primary or input your available brand colors into the rest of the color inputs in their appropriate color assignments. 
 
-![scheme-4-colors](https://user-images.githubusercontent.com/10263978/164114677-06aee19f-10a4-4435-853e-cd2e787536a6.png)
+<img width="1024" alt="custom" src="https://user-images.githubusercontent.com/10263978/228079412-4dabedc6-f6e8-44e0-90df-ff4bdbe96e3e.png">
 
 ####  Extended Colors**
 1. To extend out past user-generated dynamic colors or the baseline schemes. In **Custom**, click **Add a color**. A color input will appear and update the color schematic. 
@@ -60,12 +61,13 @@ Your brand’s colors can still take advantage of the Material You color story w
 3. To rename a custom color, with the modal closed. Find the source group and update the Custom style name. The color name will be updated next time the plugin is open.
 4. Delete by deleting the custom color source (in Figma styles).
 
-![custom-colors](https://user-images.githubusercontent.com/10263978/164114691-74035195-173b-42a5-9ac4-68a347a7f2de.png)
+![extended](https://user-images.githubusercontent.com/10263978/228080337-4595a876-eaa1-454a-aa64-b0830b3282a2.png)
+
 
 #### Add theme and presets
 You can change the current theme, add a new theme, and reset the current theme within the **Theme menu** (dropdown at top). 
 
-<img width="1456" alt="new theme" src="https://user-images.githubusercontent.com/10263978/164114549-598f5f27-2567-45ee-b2c2-143932add0fc.png">
+<img width="1024" alt="add a theme" src="https://user-images.githubusercontent.com/10263978/228081295-6bded47c-4e28-449e-b8e3-d62d7520b9c0.png">
 
 Selecting a different theme changes the current theme to edit. **Swap** with will update whatever is selected to the current theme in the dropdown. 
 
@@ -77,22 +79,20 @@ Learn about themes and [migrating to M3](https://material.io/blog/migrating-mate
 
 ## How to use - Web
 
-<img width="892" alt="web" src="https://user-images.githubusercontent.com/10263978/164114468-2c4603f7-f61e-4886-87a0-b9f94fc8ac15.png">
+<img width="892" alt="web_mtb" src="https://user-images.githubusercontent.com/10263978/228082612-0c12d312-5012-4e59-84e2-6e92ef25385b.png">
 
 #### Dynamic Color 
 1. With **Dynamic** selected, explore how dynamic color can affect an app’s color scheme.
 2. Either by selecting a wallpaper to update the UI example with colors generated from the selected wallpaper. 
 3. Select **Shuffle** to randomize the source color to update the color scheme. 
-4. **Add your wallpaper** will generate a color scheme for the app example using your chosen image. 
-
-<img width="892" alt="add wallpaper" src="https://user-images.githubusercontent.com/10263978/164114434-01860515-9d96-4235-b13f-cf2b48e24a7d.png">
+4. **Add your wallpaper** will generate a color scheme for the app example using your chosen image. The wallpaper will not be uploaded or previewed. 
 
 #### Create a custom theme
 Your brand’s colors can still take advantage of the Material You color story without dynamic color controlling the UI with the help of some resources. Colors will be shifted to generate accessible colors within the same color space as dynamic colors. 
 1. With **Custom** selected, select the color input for Primary. 
 2. A full scheme can be generated from Primary or input your available brand colors into the rest of the color inputs in their appropriate color assignments. 
 
-<img width="892" alt="custom" src="https://user-images.githubusercontent.com/10263978/164114391-d0c81c1f-b02a-43a0-a492-d756cac10258.png">
+<img width="892" alt="web_custom" src="https://user-images.githubusercontent.com/10263978/228082629-65fba055-ea79-467a-a60e-d2260e7c3a1e.png">
 
 #### Extended and harmonized colors
 1. To extend out past user-generated dynamic colors or the baseline schemes. In **Custom**, click Add a color. A color input will appear and update the color schematic. 
@@ -101,7 +101,7 @@ Your brand’s colors can still take advantage of the Material You color story w
 4. Delete by clicking the trash icon. 
 5. Extended colors can be harmonized (color shifted to) with the dynamic colors. Checking Harmonize will show the harmonized versions under **Dynamic**. 
 
-<img width="892" alt="extended" src="https://user-images.githubusercontent.com/10263978/164114355-f39058f0-3afd-4373-9582-c27f618ffb8b.png">
+<img width="892" alt="web_extended" src="https://user-images.githubusercontent.com/10263978/228082660-cbe63076-105b-4702-bf60-480b52cb6615.png">
 
 #### Export
 Ready to implement your theme? Click **Export** and select your desired code format. 
