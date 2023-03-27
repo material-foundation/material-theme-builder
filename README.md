@@ -18,6 +18,8 @@ https://goo.gle/material-theme-builder-figma
 Fixed accents add a new set of colors that will remain consistent across light and dark themes. 
 
 - Repair: If using a previously generated color scheme, Repair your theme or Create a new theme to get the new color tokens. 
+- JSON import, this will update the theme values with the same name, allowing to move themes across files and between web and figma.
+- Color style properties will now export. Meaning exact color values can be set in style properties and then exported in theme files. 
 
 Previous release: 
 - New UI for custom colors for easier to read labels and descriptive subtitles.
