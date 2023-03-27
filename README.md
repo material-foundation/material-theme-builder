@@ -14,10 +14,10 @@ Material Theme Builder for Figma:
 https://goo.gle/material-theme-builder-figma
 
 ## What's New
-The latest update introduces Surfaces based on tone values, these are no longer read-only overlays. Surfaces 1–5 will remain in the builder for current users, but we recommend migrating to new surface tokens as soon as possible.
+⚠ The latest update introduces Surfaces based on tone values, these are no longer read-only overlays. Surfaces 1–5 will remain in the builder for current users, but we recommend migrating to new surface tokens as soon as possible.
 Fixed accents add a new set of colors that will remain consistent across light and dark themes. 
 
-If using a previously generated color scheme, Repair your theme or Create a new theme to get the new color tokens. 
+- Repair: If using a previously generated color scheme, Repair your theme or Create a new theme to get the new color tokens. 
 
 Previous release: 
 - New UI for custom colors for easier to read labels and descriptive subtitles.
@@ -27,9 +27,7 @@ Previous release:
 - The Figma plugin includes setup settings and a settings modal to toggle certain features off if not needed and even try out Beta features!  
 
 ## How to use - Figma plugin
-
-⚠ _Token structure in the Material Design Kit and Material Theme Builder have been updated for easier readability and to work with Figma updates. MTB has a migration script built in for the Kit and generated color diagrams.
-Use Swap on elements with the previous token structure to update them to the new structure._ ⚠
+<img width="1024" alt="how to get started with theme builder" src="https://user-images.githubusercontent.com/10263978/228079269-44a0a810-c936-47c4-b331-ef9d79fe965a.png">
 
 #### Setup
 1. Install from the [plugin page](https://www.figma.com/community/plugin/1034969338659738588/Material-Theme-Builder), by clicking **Install** in the top right corner.
@@ -38,14 +36,16 @@ Use Swap on elements with the previous token structure to update them to the new
 4. Select and **Swap** to update the theme used in the components.
 5. Assign MD tokens (Figma styles) to custom elements and components, then **swap** to the currently selected theme.
 
-<img width="1024" alt="how to get started with theme builder" src="https://user-images.githubusercontent.com/10263978/228079269-44a0a810-c936-47c4-b331-ef9d79fe965a.png">
+<img width="666" alt="settings_statelayers" src="https://user-images.githubusercontent.com/10263978/228084527-37974bde-1c99-4f7f-98af-17b44ad54137.png">
+
 
 #### Dynamic Color
 1. With Dynamic selected, drop an image in or click to **choose an image** to derive key colors into a scheme from an image. Below the image the source color will update based on the image. The theme’s colors and any elements or components using the theme will update based on the image.
 2. Or enter a source color manually to emulate inputting an image. 
 3. Don’t want to choose an image or color? Randomize the source color with **Shuffle**.
 
-<img width="1456" alt="add image" src="https://user-images.githubusercontent.com/10263978/164114777-62b5dad2-f998-4051-8e66-62c8ff2314fd.png">
+<img width="1024" alt="dynamic" src="https://user-images.githubusercontent.com/10263978/228084131-52964273-139f-4465-97f0-59f047ed1ded.png">
+
 
 #### Create a custom theme
 Your brand’s colors can still take advantage of the Material You color story without dynamic color controlling the UI with the help of some resources. Colors will be shifted to generate accessible colors within the same color space as dynamic colors. 
