@@ -2,16 +2,10 @@
 
 # Material Theme Builder
 
-The Material Theme builder is built to assist in exploring the possibilities of dynamic color, harmonizing brand colors, and providing a type scale. All with implementation in mind to bridge designer and developer workflows.
+The Material Theme builder is built to assist in exploring the possibilities of dynamic color, harmonizing brand colors, and providing a type scale. All with implementation in mind to bridge designer and developer workflows. With built-in code export, Material Theme Builder makes it easy migrate to the M3 color system and take advantage of dynamic color.
 
-### Visualize dynamic color in your UI
-Material Design’s Dynamic color brings user personalization to apps by generating accessible light and dark color schemes from a user’s device wallpaper. 
-
-### Generate a custom theme
-Build a custom Material Theme, allowing you to migrate to Material Design 3’s new color system, and export it to code. 
-
-### Migrate to Material Design 3
-With built-in code export, Material Theme Builder makes it easy migrate to the M3 color system and take advantage of dynamic color.
+### Visualize dynamic and create a custom theme 
+Material Design’s Dynamic color brings user personalization to apps by generating accessible light and dark color schemes from a user’s device wallpaper. Build a custom Material Theme, allowing you to migrate to Material Design 3’s new color system, and export it to code. 
 
 Material Theme Builder:
 https://m3.material.io/theme-builder/
@@ -20,12 +14,17 @@ Material Theme Builder for Figma:
 https://goo.gle/material-theme-builder-figma
 
 ## What's New
-Both the web and Figma plugin have been updated recently to include:
-1. New UI for custom colors for easier to read labels and descriptive subtitles.
-2. Extended color with harmonization is now on both the Web version and Figma plugin! Your extended colors will carry between Dynamic and Custom scheme. (Harmonization is only to visualize with dynamic color).
-3. Speaking of extended colors, you can now rename and delete from within the plugin.
-4. The new HCT color picker allows to update colors using Hue, Chroma, and Tone. Plus the color picker allows to copy/paste hex code values.
-5. The Figma plugin includes setup settings and a settings modal to toggle certain features off if not needed and even try out Beta features!  
+The latest update introduces Surfaces based on tone values, these are no longer read-only overlays. Surfaces 1–5 will remain in the builder for current users, but we recommend migrating to new surface tokens as soon as possible.
+Fixed accents add a new set of colors that will remain consistent across light and dark themes. 
+
+If using a previously generated color scheme, Repair your theme or Create a new theme to get the new color tokens. 
+
+Previous release: 
+- New UI for custom colors for easier to read labels and descriptive subtitles.
+- Extended color with harmonization is now on both the Web version and Figma plugin! Your extended colors will carry between Dynamic and Custom scheme. (Harmonization is only to visualize with dynamic color).
+- Speaking of extended colors, you can now rename and delete from within the plugin.
+- The new HCT color picker allows to update colors using Hue, Chroma, and Tone. Plus the color picker allows to copy/paste hex code values.
+- The Figma plugin includes setup settings and a settings modal to toggle certain features off if not needed and even try out Beta features!  
 
 ## How to use - Figma plugin
 
@@ -35,8 +34,9 @@ Use Swap on elements with the previous token structure to update them to the new
 #### Setup
 1. Install from the [plugin page](https://www.figma.com/community/plugin/1034969338659738588/Material-Theme-Builder), by clicking **Install** in the top right corner.
 2. After installing, open the plugin from the Figma menu or command and click Get Started to generate a theme (material-theme) and Material Design tokens as Figma styles.
-3. Using design kit components? Select and **Swap** to update the theme used in the components.
-4. Assign MD tokens (Figma styles) to custom elements and components, then **swap** to the currently selected theme.
+3. Using design kit components? Turn on State Layers within settings, this will generate needed state layers when customizing the theme. 
+4. Select and **Swap** to update the theme used in the components.
+5. Assign MD tokens (Figma styles) to custom elements and components, then **swap** to the currently selected theme.
 
 <img width="1456" alt="getstarted" src="https://user-images.githubusercontent.com/10263978/164114726-3637ad9f-ed4d-4f5b-9630-3f62c3380c28.png">
 
