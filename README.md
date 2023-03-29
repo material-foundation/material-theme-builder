@@ -32,8 +32,8 @@ Previous release:
 <img width="1024" alt="how to get started with theme builder" src="https://user-images.githubusercontent.com/10263978/228079269-44a0a810-c936-47c4-b331-ef9d79fe965a.png">
 
 #### Setup
-1. Install from the [plugin page](https://www.figma.com/community/plugin/1034969338659738588/Material-Theme-Builder), by clicking **Install** in the top right corner.
-2. After installing, open the plugin from the Figma menu or command and click Get Started to generate a theme (material-theme) and Material Design tokens as Figma styles.
+1. Run by searching for Material Theme Builder within Figma plugin search or Try it Out from the Community page (will create a new file). 
+2. With the plugin open click Create Theme to generate a theme (material-theme) and Material Design tokens as Figma styles.
 3. Using design kit components? Turn on State Layers within settings, this will generate needed state layers when customizing the theme. 
 4. Select and **Swap** to update the theme used in the components.
 5. Assign MD tokens (Figma styles) to custom elements and components, then **swap** to the currently selected theme.
