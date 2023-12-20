@@ -8,7 +8,7 @@ The Material Theme builder is built to assist in exploring the possibilities of 
 Material Design’s Dynamic color brings user personalization to apps by generating accessible light and dark color schemes from a user’s device wallpaper. Build a custom Material Theme, allowing you to migrate to Material Design 3’s new color system, and export it to code. 
 
 Material Theme Builder:
-https://m3.material.io/theme-builder/
+[https://m3.material.io/theme-builder/](https://material-foundation.github.io/material-theme-builder/)
 
 Material Theme Builder for Figma:
 https://goo.gle/material-theme-builder-figma
@@ -29,7 +29,8 @@ Previous release:
 - The Figma plugin includes setup settings and a settings modal to toggle certain features off if not needed and even try out Beta features!  
 
 ## How to use - Figma plugin
-<img width="1024" alt="how to get started with theme builder" src="https://user-images.githubusercontent.com/10263978/228079269-44a0a810-c936-47c4-b331-ef9d79fe965a.png">
+<img width="1024" alt="themes-13-Material-Theme-Builder" src="https://github.com/material-foundation/material-theme-builder/assets/10263978/a64a3166-b49a-484b-8416-d268fa135bd2">
+
 
 #### Setup
 1. Run by searching for Material Theme Builder within Figma plugin search or Try it Out from the Community page (will create a new file). 
@@ -41,21 +42,22 @@ Previous release:
 <img width="666" alt="settings_statelayers" src="https://user-images.githubusercontent.com/10263978/228084527-37974bde-1c99-4f7f-98af-17b44ad54137.png">
 
 
-#### Dynamic Color
-1. With Dynamic selected, drop an image in or click to **choose an image** to derive key colors into a scheme from an image. Below the image the source color will update based on the image. The theme’s colors and any elements or components using the theme will update based on the image.
-2. Or enter a source color manually to emulate inputting an image. 
-3. Don’t want to choose an image or color? Randomize the source color with **Shuffle**.
+The foundation of a color scheme is the set of key colors that individually relate to separate tonal palettes. Specific tones from each tonal palette are assigned to color roles across a UI. Start by opening Material Theme Builder. You can build a scheme through a few methods…
+#### From a Source image
+Under Source Image, drop in an image or choose one from the file browser. Set the source of the image, Wallpaper or Content, to toggle which algorithm is used. Now select Update, the color scheme will be updated. This gives a preview of dynamic color from a user’s wallpaper or local color extraction.
+Don’t want to choose an image or color? Randomize the source color with **Shuffle**.
 
-<img width="1024" alt="dynamic" src="https://user-images.githubusercontent.com/10263978/228084131-52964273-139f-4465-97f0-59f047ed1ded.png">
+<img width="1024" alt="dynamic" src="https://github.com/material-foundation/material-theme-builder/assets/10263978/d020351a-09b5-4e1f-96dc-29fa79cb321a">
 
+#### From Core colors
+Instead of generating from a source image, build a more customized scheme…
+Start updating the key colors, with **Primary** first. Primary can be your main brand color, or primary accent color that is most utilized. Key colors are created from the input color’s hue by adjusting the chroma and tone.
+The primary key color will be used for the source color, much like the source color in the dynamic setting and will override all other key colors, so set this one first. This means, there is no need to add additional colors.
+**Secondary** roles are used for less prominent components in the UI, while expanding the opportunity for color expression.
+**Tertiary** roles are used for contrasting accents that can be used to balance primary and secondary colors or bring heightened attention to an element. 
+Neutral roles are used for surfaces and backgrounds, as well as high emphasis text and icons. Select Update. Your brand colors will now be included in the core color scheme adjusted to match the M3 color space, accessible, and able to export and implement within code as a theme. 
 
-#### Create a custom theme
-Your brand’s colors can still take advantage of the Material You color story without dynamic color controlling the UI with the help of some resources. Colors will be shifted to generate accessible colors within the same color space as dynamic colors. 
-
-1. With **Custom** selected, select the color input for Primary. 
-2. A full scheme can be generated from Primary or input your available brand colors into the rest of the color inputs in their appropriate color assignments. 
-
-<img width="1024" alt="custom" src="https://user-images.githubusercontent.com/10263978/228079412-4dabedc6-f6e8-44e0-90df-ff4bdbe96e3e.png">
+<img width="1024" alt="custom" src="https://github.com/material-foundation/material-theme-builder/assets/10263978/8f230233-9ec1-48d6-96a2-f2c8cb7991c9">
 
 ####  Extended Colors**
 1. To extend out past user-generated dynamic colors or the baseline schemes. In **Custom**, click **Add a color**. A color input will appear and update the color schematic. 
@@ -69,7 +71,7 @@ Your brand’s colors can still take advantage of the Material You color story w
 #### Add theme and presets
 You can change the current theme, add a new theme, and reset the current theme within the **Theme menu** (dropdown at top). 
 
-<img width="1024" alt="add a theme" src="https://user-images.githubusercontent.com/10263978/228081295-6bded47c-4e28-449e-b8e3-d62d7520b9c0.png">
+<img width="1024" alt="add a theme" src="https://github.com/material-foundation/material-theme-builder/assets/10263978/9d0e00c6-555b-4b04-8254-73c26a7ab59d">
 
 Selecting a different theme changes the current theme to edit. **Swap** with will update whatever is selected to the current theme in the dropdown. 
 
