@@ -1,0 +1,18 @@
+{
+  "id": "21598693-bf98-48f5-8138-8888b0810133",
+  "type": "material-button",
+  "knobs": {
+    "current": "filled-tonal"
+  },
+  "slots": {
+    "label": {
+      "id": "404b9fb7-fe53-4296-bad4-5b9e6e7f84cf",
+      "type": "material-text",
+      "knobs": {
+        "data": "2023-09-04T17:49:08.512Z"
+      },
+      "slots": {},
+      "children": []
+    }
+  }
+}
