@@ -60,7 +60,7 @@ Neutral roles are used for surfaces and backgrounds, as well as high emphasis te
 <img width="1024" alt="custom" src="https://github.com/material-foundation/material-theme-builder/assets/10263978/8f230233-9ec1-48d6-96a2-f2c8cb7991c9">
 
 ####  Extended Colors**
-1. To extend out past user-generated dynamic colors or the baseline schemes. In **Custom**, click **Add a color**. A color input will appear and update the color schematic. 
+1. To extend out past user-generated dynamic colors or the baseline schemes. Click **Add a color**. A color input will appear and update the color schematic. 
 2. Click on the color well to prompt a color picker to update the color. 
 3. To rename a custom color, with the modal closed. Find the source group and update the Custom style name. The color name will be updated next time the plugin is open.
 4. Delete by deleting the custom color source (in Figma styles).
@@ -83,30 +83,42 @@ Learn about themes and [migrating to M3](https://material.io/blog/migrating-mate
 
 ## How to use - Web
 
-<img width="892" alt="web_mtb" src="https://user-images.githubusercontent.com/10263978/228082612-0c12d312-5012-4e59-84e2-6e92ef25385b.png">
+<img width="892" alt="web_mtb" src="https://github.com/user-attachments/assets/45b9efa1-d129-4f44-9e0b-d51486f464df">
 
-#### Dynamic Color 
-1. With **Dynamic** selected, explore how dynamic color can affect an app’s color scheme.
-2. Either by selecting a wallpaper to update the UI example with colors generated from the selected wallpaper. 
-3. Select **Shuffle** to randomize the source color to update the color scheme. 
-4. **Add your wallpaper** will generate a color scheme for the app example using your chosen image. The wallpaper will not be uploaded or previewed. 
+The foundation of a color scheme is the set of key colors that individually relate to separate tonal palettes. Specific tones from each tonal palette are assigned to color roles across a UI. Start by opening Material Theme Builder. You can build a scheme through a few methods…
 
-#### Create a custom theme
-Your brand’s colors can still take advantage of the Material You color story without dynamic color controlling the UI with the help of some resources. Colors will be shifted to generate accessible colors within the same color space as dynamic colors. 
-1. With **Custom** selected, select the color input for Primary. 
-2. A full scheme can be generated from Primary or input your available brand colors into the rest of the color inputs in their appropriate color assignments. 
+#### From a Source image
+Under Source Image, there are a few wallpapers provided to demonstrate wallpaper generated themes. The last option allows to **Add your wallpaper** from an uploaded image or link.
+Don’t want to choose an image or color? Randomize the source color with **Shuffle**.
 
-<img width="892" alt="web_custom" src="https://user-images.githubusercontent.com/10263978/228082629-65fba055-ea79-467a-a60e-d2260e7c3a1e.png">
+#### From Core colors
+Instead of generating from a source image, build a more customized scheme…
+Start updating the key colors, with **Primary** first. Primary can be your main brand color, or primary accent color that is most utilized. Key colors are created from the input color’s hue by adjusting the chroma and tone.
+The primary key color will be used for the source color, much like the source color in the dynamic setting and will override all other key colors, so set this one first. This means, there is no need to add additional colors.
+**Secondary** roles are used for less prominent components in the UI, while expanding the opportunity for color expression.
+**Tertiary** roles are used for contrasting accents that can be used to balance primary and secondary colors or bring heightened attention to an element. 
+Neutral roles are used for surfaces and backgrounds, as well as high emphasis text and icons. Select Update. Your brand colors will now be included in the core color scheme adjusted to match the M3 color space, accessible, and able to export and implement within code as a theme. 
+**Color Match** will use the color inputs in place of _Container_ roles to provide color fidelity with your brand colors or to provide a more vibrant output.
+
+<img width="892" alt="web_custom" src="https://github.com/user-attachments/assets/55763e3b-7a5c-4bec-9488-d2dc1e38f8aa">
+
 
 #### Extended and harmonized colors
-1. To extend out past user-generated dynamic colors or the baseline schemes. In **Custom**, click Add a color. A color input will appear and update the color schematic. 
+1. To extend out past user-generated dynamic colors or the baseline schemes. Click Add a color. A color input will appear and update the color schematic. 
 2. Click on the color well to prompt a color picker to update the color. 
-3. To rename a custom color, hover over the color and click the **edit** (pencil) icon.
-4. Delete by clicking the trash icon. 
-5. Extended colors can be harmonized (color shifted to) with the dynamic colors. Checking Harmonize will show the harmonized versions under **Dynamic**. 
+3. To update a custom color, open the overflow menu and select **Rename**.
+4. Delete by selected **Delete**. 
+5. Extended colors can be harmonized (color shifted to) with the dynamic colors. 
 
-<img width="892" alt="web_extended" src="https://user-images.githubusercontent.com/10263978/228082660-cbe63076-105b-4702-bf60-480b52cb6615.png">
+<img width="892" alt="web_extended" src="https://github.com/user-attachments/assets/d9f92e64-1e90-4096-8b50-95393a6e7f57">
+
+#### Type theme
+Click through to **Pick your Fonts** to add custom type to your theme. 
+
+<img width="892" alt="web_fonts" src="https://github.com/user-attachments/assets/5d269a4c-8969-4e51-a252-0845f87cddc7">
+
+
 
 #### Export
-Ready to implement your theme? Click **Export** and select your desired code format. 
+Ready to implement your theme? Open the drawer or click through to Export.
 Learn about themes and [migrating to M3](https://material.io/blog/migrating-material-3) or try out implementation with [Adding dynamic color to your app codelab](https://codelabs.developers.google.com/codelabs/apply-dynamic-color#0). 
