@@ -1,0 +1,424 @@
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Generated Material Theme Builder for Angular Styles
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define your theme variables for color, typography and density
+:root {
+  --md-sys-typescale-display1-font: Roboto;
+  --md-sys-typescale-display1-weight: Regular;
+  --md-sys-typescale-display1-size: 64px;
+  --md-sys-typescale-display1-line-height: 76px;
+  --md-sys-typescale-display1-tracking: -0.5px;
+
+  --md-sys-typescale-display2-font: Roboto;
+  --md-sys-typescale-display2-weight: Regular;
+  --md-sys-typescale-display2-size: 57px;
+  --md-sys-typescale-display2-line-height: 64px;
+  --md-sys-typescale-display2-tracking: -0.25px;
+
+  --md-sys-typescale-display3-font: Roboto;
+  --md-sys-typescale-display3-weight: Regular;
+  --md-sys-typescale-display3-size: 45px;
+  --md-sys-typescale-display3-line-height: 52px;
+  --md-sys-typescale-display3-tracking: 0px;
+
+  --md-sys-typescale-headline1-font: Roboto;
+  --md-sys-typescale-headline1-weight: Regular;
+  --md-sys-typescale-headline1-size: 36px;
+  --md-sys-typescale-headline1-line-height: 44px;
+  --md-sys-typescale-headline1-tracking: 0px;
+
+  --md-sys-typescale-headline2-font: Roboto;
+  --md-sys-typescale-headline2-weight: Regular;
+  --md-sys-typescale-headline2-size: 32px;
+  --md-sys-typescale-headline2-line-height: 40px;
+  --md-sys-typescale-headline2-tracking: 0px;
+
+  --md-sys-typescale-subhead1-font: Roboto;
+  --md-sys-typescale-subhead1-weight: Medium;
+  --md-sys-typescale-subhead1-size: 16px;
+  --md-sys-typescale-subhead1-line-height: 24px;
+  --md-sys-typescale-subhead1-tracking: 0.1px;
+
+  --md-sys-typescale-subhead2-font: Roboto;
+  --md-sys-typescale-subhead2-weight: Medium;
+  --md-sys-typescale-subhead2-size: 14px;
+  --md-sys-typescale-subhead2-line-height: 20px;
+  --md-sys-typescale-subhead2-tracking: 0.1px;
+
+  --md-sys-typescale-body1-font: Roboto;
+  --md-sys-typescale-body1-weight: Regular;
+  --md-sys-typescale-body1-size: 16px;
+  --md-sys-typescale-body1-line-height: 24px;
+  --md-sys-typescale-body1-tracking: 0.5px;
+
+  --md-sys-typescale-body2-font: Roboto;
+  --md-sys-typescale-body2-weight: Regular;
+  --md-sys-typescale-body2-size: 14px;
+  --md-sys-typescale-body2-line-height: 20px;
+  --md-sys-typescale-body2-tracking: 0.25px;
+
+  --md-sys-typescale-caption-font: Roboto;
+  --md-sys-typescale-caption-weight: Regular;
+  --md-sys-typescale-caption-size: 32px;
+  --md-sys-typescale-caption-line-height: 16px;
+  --md-sys-typescale-caption-tracking: 0.4px;
+
+  --md-sys-typescale-button-font: Roboto;
+  --md-sys-typescale-button-weight: Medium;
+  --md-sys-typescale-button-size: 14px;
+  --md-sys-typescale-button-line-height: 20px;
+  --md-sys-typescale-button-tracking: 0.1px;
+
+  --md-sys-color-primary-light: #6750A4;
+  --md-sys-color-on-primary-light: #FFFFFF;
+
+  --md-sys-color-secondary-light: #625B71;
+  --md-sys-color-on-secondary-light: #FFFFFF;
+
+  --md-sys-color-error-light: #B3261E;
+  --md-sys-color-on-error-light: #FFFFFF;
+
+  --md-sys-color-primary-dark: #D0BCFF;
+  --md-sys-color-on-primary-dark: #381E72;
+
+  --md-sys-color-secondary-dark: #CCC2DC;
+  --md-sys-color-on-secondary-dark: #332D41;
+
+  --md-sys-color-error-dark: #F2B8B5;
+  --md-sys-color-on-error-dark: #601410;
+}
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+// Define your Angular theme with color palettes, typography and density
+$theme-primary-palette: (
+  50: var(--md-sys-color-primary-light),
+  100: var(--md-sys-color-primary-light),
+  200: var(--md-sys-color-primary-light),
+  300: var(--md-sys-color-primary-light),
+  400: var(--md-sys-color-primary-light),
+  500: var(--md-sys-color-primary-light),
+  600: var(--md-sys-color-primary-light),
+  700: var(--md-sys-color-primary-light),
+  800: var(--md-sys-color-primary-light),
+  900: var(--md-sys-color-primary-light),
+  A100: var(--md-sys-color-primary-light),
+  A200: var(--md-sys-color-primary-light),
+  A400: var(--md-sys-color-primary-light),
+  A700: var(--md-sys-color-primary-light),
+  contrast: (
+    50: var(--md-sys-color-on-primary-light),
+    100: var(--md-sys-color-on-primary-light),
+    200: var(--md-sys-color-on-primary-light),
+    300: var(--md-sys-color-on-primary-light),
+    400: var(--md-sys-color-on-primary-light),
+    500: var(--md-sys-color-on-primary-light),
+    600: var(--md-sys-color-on-primary-light),
+    700: var(--md-sys-color-on-primary-light),
+    800: var(--md-sys-color-on-primary-light),
+    900: var(--md-sys-color-on-primary-light),
+    A100: var(--md-sys-color-on-primary-light),
+    A200: var(--md-sys-color-on-primary-light),
+    A400: var(--md-sys-color-on-primary-light),
+    A700: var(--md-sys-color-on-primary-light),
+  )
+);
+
+$theme-primary: mat.define-palette(
+  $theme-primary-palette,
+  $default: 500,
+  $lighter: 200,
+  $darker: 700,
+  $text: 500
+);
+
+$theme-accent-palette: (
+  50: var(--md-sys-color-secondary-light),
+  100: var(--md-sys-color-secondary-light),
+  200: var(--md-sys-color-secondary-light),
+  300: var(--md-sys-color-secondary-light),
+  400: var(--md-sys-color-secondary-light),
+  500: var(--md-sys-color-secondary-light),
+  600: var(--md-sys-color-secondary-light),
+  700: var(--md-sys-color-secondary-light),
+  800: var(--md-sys-color-secondary-light),
+  900: var(--md-sys-color-secondary-light),
+  A100: var(--md-sys-color-secondary-light),
+  A200: var(--md-sys-color-secondary-light),
+  A400: var(--md-sys-color-secondary-light),
+  A700: var(--md-sys-color-secondary-light),
+  contrast: (
+    50: var(--md-sys-color-on-secondary-light),
+    100: var(--md-sys-color-on-secondary-light),
+    200: var(--md-sys-color-on-secondary-light),
+    300: var(--md-sys-color-on-secondary-light),
+    400: var(--md-sys-color-on-secondary-light),
+    500: var(--md-sys-color-on-secondary-light),
+    600: var(--md-sys-color-on-secondary-light),
+    700: var(--md-sys-color-on-secondary-light),
+    800: var(--md-sys-color-on-secondary-light),
+    900: var(--md-sys-color-on-secondary-light),
+    A100: var(--md-sys-color-on-secondary-light),
+    A200: var(--md-sys-color-on-secondary-light),
+    A400: var(--md-sys-color-on-secondary-light),
+    A700: var(--md-sys-color-on-secondary-light),
+  )
+);
+
+$theme-accent: mat.define-palette(
+  $theme-accent-palette,
+  $default: 500,
+  $lighter: 200,
+  $darker: 700,
+  $text: 500
+);
+
+// The warn palette is optional (defaults to red).
+$theme-warn-palette: (
+  50: var(--md-sys-color-error-light),
+  100: var(--md-sys-color-error-light),
+  200: var(--md-sys-color-error-light),
+  300: var(--md-sys-color-error-light),
+  400: var(--md-sys-color-error-light),
+  500: var(--md-sys-color-error-light),
+  600: var(--md-sys-color-error-light),
+  700: var(--md-sys-color-error-light),
+  800: var(--md-sys-color-error-light),
+  900: var(--md-sys-color-error-light),
+  A100: var(--md-sys-color-error-light),
+  A200: var(--md-sys-color-error-light),
+  A400: var(--md-sys-color-error-light),
+  A700: var(--md-sys-color-error-light),
+  contrast: (
+    50: var(--md-sys-color-on-error-light),
+    100: var(--md-sys-color-on-error-light),
+    200: var(--md-sys-color-on-error-light),
+    300: var(--md-sys-color-on-error-light),
+    400: var(--md-sys-color-on-error-light),
+    500: var(--md-sys-color-on-error-light),
+    600: var(--md-sys-color-on-error-light),
+    700: var(--md-sys-color-on-error-light),
+    800: var(--md-sys-color-on-error-light),
+    900: var(--md-sys-color-on-error-light),
+    A100: var(--md-sys-color-on-error-light),
+    A200: var(--md-sys-color-on-error-light),
+    A400: var(--md-sys-color-on-error-light),
+    A700: var(--md-sys-color-on-error-light),
+  )
+);
+
+$theme-warn: mat.define-palette(
+  $theme-warn-palette,
+  $default: 500,
+  $lighter: 200,
+  $darker: 700,
+  $text: 500
+);
+
+$dark-theme-primary-palette: (
+  50: var(--md-sys-color-primary-dark),
+  100: var(--md-sys-color-primary-dark),
+  200: var(--md-sys-color-primary-dark),
+  300: var(--md-sys-color-primary-dark),
+  400: var(--md-sys-color-primary-dark),
+  500: var(--md-sys-color-primary-dark),
+  600: var(--md-sys-color-primary-dark),
+  700: var(--md-sys-color-primary-dark),
+  800: var(--md-sys-color-primary-dark),
+  900: var(--md-sys-color-primary-dark),
+  A100: var(--md-sys-color-primary-dark),
+  A200: var(--md-sys-color-primary-dark),
+  A400: var(--md-sys-color-primary-dark),
+  A700: var(--md-sys-color-primary-dark),
+  contrast: (
+    50: var(--md-sys-color-on-primary-dark),
+    100: var(--md-sys-color-on-primary-dark),
+    200: var(--md-sys-color-on-primary-dark),
+    300: var(--md-sys-color-on-primary-dark),
+    400: var(--md-sys-color-on-primary-dark),
+    500: var(--md-sys-color-on-primary-dark),
+    600: var(--md-sys-color-on-primary-dark),
+    700: var(--md-sys-color-on-primary-dark),
+    800: var(--md-sys-color-on-primary-dark),
+    900: var(--md-sys-color-on-primary-dark),
+    A100: var(--md-sys-color-on-primary-dark),
+    A200: var(--md-sys-color-on-primary-dark),
+    A400: var(--md-sys-color-on-primary-dark),
+    A700: var(--md-sys-color-on-primary-dark),
+  )
+);
+
+$dark-theme-primary: mat.define-palette(
+  $dark-theme-primary-palette,
+  $default: 500,
+  $lighter: 200,
+  $darker: 700,
+  $text: 500
+);
+
+$dark-theme-accent-palette: (
+  50: var(--md-sys-color-secondary-dark),
+  100: var(--md-sys-color-secondary-dark),
+  200: var(--md-sys-color-secondary-dark),
+  300: var(--md-sys-color-secondary-dark),
+  400: var(--md-sys-color-secondary-dark),
+  500: var(--md-sys-color-secondary-dark),
+  600: var(--md-sys-color-secondary-dark),
+  700: var(--md-sys-color-secondary-dark),
+  800: var(--md-sys-color-secondary-dark),
+  900: var(--md-sys-color-secondary-dark),
+  A100: var(--md-sys-color-secondary-dark),
+  A200: var(--md-sys-color-secondary-dark),
+  A400: var(--md-sys-color-secondary-dark),
+  A700: var(--md-sys-color-secondary-dark),
+  contrast: (
+    50: var(--md-sys-color-on-secondary-dark),
+    100: var(--md-sys-color-on-secondary-dark),
+    200: var(--md-sys-color-on-secondary-dark),
+    300: var(--md-sys-color-on-secondary-dark),
+    400: var(--md-sys-color-on-secondary-dark),
+    500: var(--md-sys-color-on-secondary-dark),
+    600: var(--md-sys-color-on-secondary-dark),
+    700: var(--md-sys-color-on-secondary-dark),
+    800: var(--md-sys-color-on-secondary-dark),
+    900: var(--md-sys-color-on-secondary-dark),
+    A100: var(--md-sys-color-on-secondary-dark),
+    A200: var(--md-sys-color-on-secondary-dark),
+    A400: var(--md-sys-color-on-secondary-dark),
+    A700: var(--md-sys-color-on-secondary-dark),
+  )
+);
+
+$dark-theme-accent: mat.define-palette(
+  $dark-theme-accent-palette,
+  $default: 500,
+  $lighter: 200,
+  $darker: 700,
+  $text: 500
+);
+
+$dark-theme-warn-palette: (
+  50: var(--md-sys-color-error-dark),
+  100: var(--md-sys-color-error-dark),
+  200: var(--md-sys-color-error-dark),
+  300: var(--md-sys-color-error-dark),
+  400: var(--md-sys-color-error-dark),
+  500: var(--md-sys-color-error-dark),
+  600: var(--md-sys-color-error-dark),
+  700: var(--md-sys-color-error-dark),
+  800: var(--md-sys-color-error-dark),
+  900: var(--md-sys-color-error-dark),
+  A100: var(--md-sys-color-error-dark),
+  A200: var(--md-sys-color-error-dark),
+  A400: var(--md-sys-color-error-dark),
+  A700: var(--md-sys-color-error-dark),
+  contrast: (
+    50: var(--md-sys-color-on-error-dark),
+    100: var(--md-sys-color-on-error-dark),
+    200: var(--md-sys-color-on-error-dark),
+    300: var(--md-sys-color-on-error-dark),
+    400: var(--md-sys-color-on-error-dark),
+    500: var(--md-sys-color-on-error-dark),
+    600: var(--md-sys-color-on-error-dark),
+    700: var(--md-sys-color-on-error-dark),
+    800: var(--md-sys-color-on-error-dark),
+    900: var(--md-sys-color-on-error-dark),
+    A100: var(--md-sys-color-on-error-dark),
+    A200: var(--md-sys-color-on-error-dark),
+    A400: var(--md-sys-color-on-error-dark),
+    A700: var(--md-sys-color-on-error-dark),
+  )
+);
+
+$dark-theme-warn: mat.define-palette(
+  $dark-theme-warn-palette,
+  $default: 500,
+  $lighter: 200,
+  $darker: 700,
+  $text: 500
+);
+
+// Import any additional fonts needed in your angular.json
+
+$typography: mat.define-typography-config(
+  $font-family: var(--md-sys-typescale-display1-font),
+  $display-4:     mat.define-typography-level($font-size: var(--md-sys-typescale-display1-size),  $line-height: var(--md-sys-typescale-display1-line-height),   $font-weight: var(--md-sys-typescale-display1-weight),  $font-family: var(--md-sys-typescale-overline-font),  $letter-spacing: var(--md-sys-typescale-display1-tracking)),
+  $display-3:     mat.define-typography-level($font-size: var(--md-sys-typescale-display2-size),  $line-height: var(--md-sys-typescale-display2-line-height),   $font-weight: var(--md-sys-typescale-display2-weight),  $font-family: var(--md-sys-typescale-display3-font),  $letter-spacing: var(--md-sys-typescale-display2-tracking)),
+  $display-2:     mat.define-typography-level($font-size: var(--md-sys-typescale-display3-size),  $line-height: var(--md-sys-typescale-display3-line-height),   $font-weight: var(--md-sys-typescale-display3-weight),  $font-family: var(--md-sys-typescale-display2-font),  $letter-spacing: var(--md-sys-typescale-display3-tracking)),
+  $display-1:     mat.define-typography-level($font-size: var(--md-sys-typescale-headline1-size), $line-height: var(--md-sys-typescale-headline1-line-height),  $font-weight: var(--md-sys-typescale-headline1-weight), $font-family: var(--md-sys-typescale-headline1-font), $letter-spacing: var(--md-sys-typescale-headline1-tracking)),
+  $headline:      mat.define-typography-level($font-size: var(--md-sys-typescale-headline2-size), $line-height: var(--md-sys-typescale-headline2-line-height),  $font-weight: var(--md-sys-typescale-headline2-weight), $font-family: var(--md-sys-typescale-headline2-font), $letter-spacing: var(--md-sys-typescale-headline2-tracking)),
+  $title:         mat.define-typography-level($font-size: var(--md-sys-typescale-headline3-size), $line-height: var(--md-sys-typescale-headline3-line-height),  $font-weight: var(--md-sys-typescale-headline3-weight), $font-family: var(--md-sys-typescale-headline3-font), $letter-spacing: var(--md-sys-typescale-headline3-tracking)),
+  $subheading-2:  mat.define-typography-level($font-size: var(--md-sys-typescale-subhead1-size),  $line-height: var(--md-sys-typescale-subhead1-line-height),   $font-weight: var(--md-sys-typescale-subhead1-weight),  $font-family: var(--md-sys-typescale-subhead1-font),  $letter-spacing: var(--md-sys-typescale-subhead1-tracking)),
+  $subheading-1:  mat.define-typography-level($font-size: var(--md-sys-typescale-subhead2-size),  $line-height: var(--md-sys-typescale-subhead2-line-height),   $font-weight: var(--md-sys-typescale-subhead2-weight),  $font-family: var(--md-sys-typescale-subhead2-font),  $letter-spacing: var(--md-sys-typescale-subhead2-tracking)),
+  $body-2:        mat.define-typography-level($font-size: var(--md-sys-typescale-body1-size),     $line-height: var(--md-sys-typescale-body1-line-height),      $font-weight: var(--md-sys-typescale-body1-weight),     $font-family: var(--md-sys-typescale-body1-font),     $letter-spacing: var(--md-sys-typescale-body1-tracking)),
+  $body-1:        mat.define-typography-level($font-size: var(--md-sys-typescale-body2-size),     $line-height: var(--md-sys-typescale-body2-line-height),      $font-weight: var(--md-sys-typescale-body2-weight),     $font-family: var(--md-sys-typescale-body2-font),     $letter-spacing: var(--md-sys-typescale-body2-tracking)),
+  $caption:       mat.define-typography-level($font-size: var(--md-sys-typescale-caption-size),   $line-height: var(--md-sys-typescale-caption-line-height),    $font-weight: var(--md-sys-typescale-caption-weight),   $font-family: var(--md-sys-typescale-caption-font),   $letter-spacing: var(--md-sys-typescale-caption-tracking)),
+  $button:        mat.define-typography-level($font-size: var(--md-sys-typescale-button-size),    $line-height: var(--md-sys-typescale-button-line-height),     $font-weight: var(--md-sys-typescale-button-weight),    $font-family: var(--md-sys-typescale-button-font),    $letter-spacing: var(--md-sys-typescale-button-tracking)),
+  // Line-height must be unit-less fraction of the font-size.
+  $input:         mat.define-typography-level($font-size: inherit, $line-height: 1.125, $font-weight: 500, $font-family: Rubik),
+);
+
+$density: 0;
+// @include mat.elevation(
+//   $zValue: 12,
+//   $color: #000,
+//   $opacity: 0.5
+// );
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$core-theme: mat.define-light-theme((
+  color: (
+    primary: $theme-primary,
+    accent: $theme-accent,
+    warn: $theme-warn
+  ),
+  typography: $typography,
+  density: $density
+));
+
+$dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $dark-theme-primary,
+    accent: $dark-theme-accent,
+    warn: $dark-theme-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.core($core-theme);
+@include mat.all-component-themes($core-theme);
+
+.dark-theme {
+  @include mat.all-component-colors($dark-theme);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+/* Style resets */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
